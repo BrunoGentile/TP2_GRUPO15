@@ -18,8 +18,15 @@ namespace TP2_GRUPO_15
         {
             if (string.IsNullOrWhiteSpace(txtUsuario.Text) || string.IsNullOrWhiteSpace(txtClave.Text))
             {
-                return;
+                    return;
+            }else if (txtUsuario.Text == "claudio" && txtClave.Text == "casas")
+            {
+                /// INSTRUCCIONES
+            }else
+            {
+                Server.Transfer("Ejercicio4C.aspx");
             }
         }
+
     }
 }
