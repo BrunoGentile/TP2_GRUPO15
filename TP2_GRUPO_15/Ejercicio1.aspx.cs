@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -16,6 +17,7 @@ namespace TP2_GRUPO_15
         protected void BtnTabla_Click(object sender, EventArgs e)
         {
             string producto = txtProducto.Text;
+            string cantidad = txtCantidad.Text;
 
             if (ViewState["Productos"] == null)
             {
@@ -24,7 +26,18 @@ namespace TP2_GRUPO_15
 
             List<string> productos = ViewState["Productos"] as List<string>;
 
-            productos.Add(producto);
+
+            if (producto.Length == 0 || cantidad.Length == 0)
+            {
+                txtProducto.BackColor = System.Drawing.Color.Red;
+                txtCantidad.BackColor = System.Drawing.Color.Red;
+            }
+            else
+            {
+                txtProducto.BackColor = System.Drawing.Color.White;
+                txtCantidad.BackColor = System.Drawing.Color.White;
+                productos.Add(producto);
+            }
 
             string tabla = "<table border='1'>";
             tabla += "<tr><td>Producto</td></tr>";
