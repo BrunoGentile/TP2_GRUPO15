@@ -14,11 +14,25 @@
             height: 23px;
         }
         .auto-style3 {
-            width: 62px;
+            width: 10px;
         }
         .auto-style4 {
             height: 23px;
-            width: 62px;
+            width: 10px;
+        }
+        .auto-style5 {
+            width: 70px;
+        }
+        .auto-style6 {
+            height: 23px;
+            width: 70px;
+        }
+        .auto-style7 {
+            width: 160px;
+        }
+        .auto-style8 {
+            height: 23px;
+            width: 160px;
         }
     </style>
 </head>
@@ -28,8 +42,8 @@
     <table class="auto-style1">
         <tr>
             <td class="auto-style3">&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
+            <td class="auto-style5">&nbsp;</td>
+            <td class="auto-style7">&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -37,8 +51,10 @@
         </tr>
         <tr>
             <td class="auto-style4"></td>
-            <td class="auto-style2"></td>
-            <td class="auto-style2"></td>
+            <td class="auto-style6">Nombre:</td>
+            <td class="auto-style8">
+                <asp:TextBox ID="TextBox1" runat="server" Width="150px"></asp:TextBox>
+            </td>
             <td class="auto-style2"></td>
             <td class="auto-style2"></td>
             <td class="auto-style2"></td>
@@ -46,8 +62,8 @@
         </tr>
         <tr>
             <td class="auto-style3">&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
+            <td class="auto-style5">&nbsp;</td>
+            <td class="auto-style7">&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -55,17 +71,30 @@
         </tr>
         <tr>
             <td class="auto-style3">&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
+            <td class="auto-style5">Apellido:</td>
+            <td class="auto-style7">
+                <asp:TextBox ID="TextBox2" runat="server" Width="150px"></asp:TextBox>
+            </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style3">Ciudad:</td>
-            <td>
-                <asp:DropDownList ID="ddlCiudad" runat="server">
+            <td class="auto-style3">&nbsp;</td>
+            <td class="auto-style5">
+                &nbsp;</td>
+            <td class="auto-style7">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="auto-style3">&nbsp;</td>
+            <td class="auto-style5">Ciudad</td>
+            <td class="auto-style7">
+                <asp:DropDownList ID="ddlCiudad" runat="server" Width="120px">
                     <asp:ListItem Value="Zona Norte">Gral. Pacheco</asp:ListItem>
                     <asp:ListItem Value="Zona Oeste">San Miguel</asp:ListItem>
                     <asp:ListItem Value="Zona Sur">Boedo</asp:ListItem>
@@ -75,21 +104,11 @@
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
-            <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style3">&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style3">&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
+            <td class="auto-style5">&nbsp;</td>
+            <td class="auto-style7">&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
