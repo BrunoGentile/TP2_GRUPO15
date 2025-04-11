@@ -105,7 +105,9 @@
                 </tr>
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
-                    <td class="auto-style3">&nbsp;</td>
+                    <td class="auto-style3">
+                        <asp:Button ID="Button1" runat="server" Font-Bold="False" Font-Size="Small" style="margin-bottom: 0px" Text="Generar Tabla" />
+                    </td>
                     <td class="auto-style4">&nbsp;</td>
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style5">&nbsp;</td>
