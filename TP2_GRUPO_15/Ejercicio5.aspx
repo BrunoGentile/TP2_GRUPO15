@@ -231,7 +231,9 @@
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td class="auto-style2">&nbsp;</td>
+                    <td class="auto-style2">
+                        <asp:Button ID="btnCalcularPrecio" runat="server" Text="Calcular Precio" Width="152px" />
+                    </td>
                     <td>&nbsp;</td>
                     <td class="auto-style4">&nbsp;</td>
                     <td>&nbsp;</td>
