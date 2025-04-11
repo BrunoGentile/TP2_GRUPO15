@@ -13,5 +13,13 @@ namespace TP2_GRUPO_15
         {
 
         }
+
+        protected void btnValidar_Click1(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtUsuario.Text) || string.IsNullOrWhiteSpace(txtClave.Text))
+            {
+                return;
+            }
+        }
     }
 }
