@@ -67,12 +67,12 @@
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style3">Ingrese nombre del producto:</td>
                     <td class="auto-style4">
-                        <asp:TextBox ID="TextBox1" runat="server" Width="150px"></asp:TextBox>
+                        <asp:TextBox ID="txtProducto" runat="server" Width="150px"></asp:TextBox>
                     </td>
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style5">Cantidad:</td>
                     <td class="auto-style11">
-                        <asp:TextBox ID="TextBox2" runat="server" Width="100px"></asp:TextBox>
+                        <asp:TextBox ID="txtCantidad" runat="server" Width="100px"></asp:TextBox>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
@@ -87,7 +87,9 @@
                 </tr>
                 <tr>
                     <td class="auto-style6"></td>
-                    <td class="auto-style7"></td>
+                    <td class="auto-style7">
+                        <asp:Button ID="BtnTabla" runat="server" Font-Bold="False" Font-Size="Small" style="margin-bottom: 0px" Text="Generar Tabla" OnClick="BtnTabla_Click" />
+                    </td>
                     <td class="auto-style8"></td>
                     <td class="auto-style6"></td>
                     <td class="auto-style10"></td>
@@ -106,7 +108,7 @@
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style3">
-                        <asp:Button ID="Button1" runat="server" Font-Bold="False" Font-Size="Small" style="margin-bottom: 0px" Text="Generar Tabla" />
+                        <asp:Label ID="lblTabla" runat="server"></asp:Label>
                     </td>
                     <td class="auto-style4">&nbsp;</td>
                     <td class="auto-style2">&nbsp;</td>

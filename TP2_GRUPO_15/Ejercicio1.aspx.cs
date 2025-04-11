@@ -13,10 +13,32 @@ namespace TP2_GRUPO_15
         {
 
         }
-
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void BtnTabla_Click(object sender, EventArgs e)
         {
+            string producto = txtProducto.Text;
 
+            if (ViewState["Productos"] == null)
+            {
+                ViewState["Productos"] = new List<string>();
+            }
+
+            List<string> productos = ViewState["Productos"] as List<string>;
+
+            productos.Add(producto);
+
+            string tabla = "<table border='1'>";
+            tabla += "<tr><td>Producto</td></tr>";
+
+            foreach (string product in productos)
+            {
+                tabla += "<tr><td>" + product + "</td></tr>";
+            }
+            tabla += "<tr><td>TOTAL</td></tr>";
+            tabla += "</table>";
+
+            lblTabla.Text = tabla;
+
+            txtProducto.Text = "";
         }
     }
 }
