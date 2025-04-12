@@ -11,7 +11,7 @@ namespace TP2_GRUPO_15
 {
 
 
-    public partial class Ejercicio5
+    public partial class Ejercicio2B
     {
 
         /// <summary>
@@ -24,39 +24,30 @@ namespace TP2_GRUPO_15
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Control ddlMemoria.
+        /// Control Label1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlMemoria;
+        protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
-        /// Control cblAccesorios.
+        /// Control btnVolver.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList cblAccesorios;
+        protected global::System.Web.UI.WebControls.Button btnVolver;
 
         /// <summary>
-        /// Control btnCalcularPrecio.
+        /// Control lblZona.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCalcularPrecio;
-
-        /// <summary>
-        /// Control btnInicio.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnInicio;
+        protected global::System.Web.UI.WebControls.Label lblZona;
     }
 }

@@ -40,8 +40,13 @@ namespace TP2_GRUPO_15
                 lblMensajeError.Text = "Debe seleccionar al menos un tema.";
                 return;
             }
+            else
+            {
+                lblMensajeError.Text = "";
+                Server.Transfer("Ejercicio2B.aspx");
+            }
 
-            VerZona(); /// COLOCA EN EL LABEL LA ZONA SELECCIONADA
+                VerZona(); /// COLOCA EN EL LABEL LA ZONA SELECCIONADA
             lblMensajeError.Text = "";
         }
 
