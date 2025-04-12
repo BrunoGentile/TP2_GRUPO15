@@ -48,6 +48,24 @@
             width: 145px;
             height: 23px;
         }
+        .auto-style13 {
+            width: 50px;
+            height: 30px;
+        }
+        .auto-style14 {
+            width: 145px;
+            height: 30px;
+        }
+        .auto-style15 {
+            height: 30px;
+        }
+        .auto-style16 {
+            width: 58px;
+        }
+        .auto-style17 {
+            height: 23px;
+            width: 58px;
+        }
     </style>
 </head>
 <body>
@@ -58,7 +76,7 @@
             <td class="auto-style3">&nbsp;</td>
             <td class="auto-style5">&nbsp;</td>
             <td class="auto-style7">&nbsp;</td>
-            <td>&nbsp;</td>
+            <td class="auto-style16">&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -69,7 +87,7 @@
             <td class="auto-style8">
                 <asp:TextBox ID="TextBox1" runat="server" Width="150px" AutoPostBack="true"></asp:TextBox>
             </td>
-            <td class="auto-style2"></td>
+            <td class="auto-style17"></td>
             <td class="auto-style2">
                 <asp:Button ID="btnInicio" runat="server" OnClick="btnInicio_Click" Text="Inicio" Width="55px" />
             </td>
@@ -80,7 +98,7 @@
             <td class="auto-style3">&nbsp;</td>
             <td class="auto-style5">&nbsp;</td>
             <td class="auto-style7">&nbsp;</td>
-            <td>&nbsp;</td>
+            <td class="auto-style16">&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -91,7 +109,7 @@
             <td class="auto-style7">
                 <asp:TextBox ID="TextBox2" runat="server" Width="150px" AutoPostBack="true"></asp:TextBox>
             </td>
-            <td>&nbsp;</td>
+            <td class="auto-style16">&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -101,7 +119,7 @@
             <td class="auto-style5">
                 &nbsp;</td>
             <td class="auto-style7">&nbsp;</td>
-            <td>&nbsp;</td>
+            <td class="auto-style16">&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -116,7 +134,7 @@
                     <asp:ListItem Value="Zona Sur">Boedo</asp:ListItem>
                 </asp:DropDownList>
             </td>
-            <td>&nbsp;</td>
+            <td class="auto-style16">&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -125,19 +143,19 @@
             <td class="auto-style3">&nbsp;</td>
             <td class="auto-style5">&nbsp;</td>
             <td class="auto-style7">&nbsp;</td>
-            <td>&nbsp;</td>
+            <td class="auto-style16">&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style3">&nbsp;</td>
-            <td class="auto-style5">Temas</td>
-            <td class="auto-style7">&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
+            <td class="auto-style4"></td>
+            <td class="auto-style6">Temas</td>
+            <td class="auto-style8"></td>
+            <td class="auto-style17"></td>
+            <td class="auto-style2"></td>
+            <td class="auto-style2"></td>
+            <td class="auto-style2"></td>
         </tr>
         <tr>
             <td class="auto-style3">&nbsp;</td>
@@ -146,7 +164,20 @@
                 <asp:CheckBoxList ID="chkTemas" runat="server" BorderStyle="None">
                 </asp:CheckBoxList>
             </td>
+            <td class="auto-style16">&nbsp;</td>
             <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="auto-style3">&nbsp;</td>
+            <td class="auto-style5">&nbsp;</td>
+            <td class="auto-style7">
+                <asp:Button ID="btnVerResumen" runat="server" OnClick="btnVerResumen_Click" Text="Ver resumen" />
+            </td>
+            <td class="auto-style16">
+                <asp:Label ID="lblMensajeError" runat="server"></asp:Label>
+            </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -165,15 +196,15 @@
                     <td class="auto-style2"></td>
                 </tr>
                 <tr>
-                    <td class="auto-style10">&nbsp;</td>
-                    <td class="auto-style9">
+                    <td class="auto-style13"></td>
+                    <td class="auto-style14">
                         <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="18pt" Text="Resumen"></asp:Label>
                     </td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style15"></td>
+                    <td class="auto-style15"></td>
+                    <td class="auto-style15"></td>
+                    <td class="auto-style15"></td>
+                    <td class="auto-style15"></td>
                 </tr>
                 <tr>
                     <td class="auto-style10">&nbsp;</td>
@@ -186,7 +217,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style11"></td>
-                    <td class="auto-style12"></td>
+                    <td class="auto-style12">&nbsp;</td>
                     <td class="auto-style2"></td>
                     <td class="auto-style2"></td>
                     <td class="auto-style2"></td>
@@ -195,7 +226,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style11"></td>
-                    <td class="auto-style12"></td>
+                    <td class="auto-style12">&nbsp;</td>
                     <td class="auto-style2"></td>
                     <td class="auto-style2"></td>
                     <td class="auto-style2"></td>

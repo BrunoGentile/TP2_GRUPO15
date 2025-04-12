@@ -13,14 +13,31 @@ namespace TP2_GRUPO_15
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            chkTemas.Items.Add("Ciencias");
-            chkTemas.Items.Add("Literatura");
-            chkTemas.Items.Add("Historia");
+            if (!IsPostBack)
+            {
+                chkTemas.Items.Add("Ciencias");
+                chkTemas.Items.Add("Literatura");
+                chkTemas.Items.Add("Historia");
+            }
         }
 
         protected void btnInicio_Click(object sender, EventArgs e)
         {
             Response.Redirect("Inicio.aspx");
+        }
+
+        protected void btnVerResumen_Click(object sender, EventArgs e)
+        {
+
+            if (chkTemas.SelectedIndex == -1)
+            {
+                // No se seleccionó ningún tema: mostrar mensaje y salir
+                lblMensajeError.Text = "Debe seleccionar al menos un tema.";
+                return;
+            }
+
+            // Si hay al menos un tema seleccionado, borramos el mensaje (opcional)
+            lblMensajeError.Text = "";
         }
 
     }
