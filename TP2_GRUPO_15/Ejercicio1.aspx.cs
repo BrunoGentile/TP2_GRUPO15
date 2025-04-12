@@ -54,6 +54,10 @@ namespace TP2_GRUPO_15
             lblTabla.Text = tabla;
 
             txtProducto.Text = "";
+            txtProducto2.Text = "";
+            txtCantidad.Text = "";
+            txtCantidad2.Text = "";
+
         }
 
         protected void btnInicio_Click(object sender, EventArgs e)
