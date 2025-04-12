@@ -18,6 +18,7 @@ namespace TP2_GRUPO_15
         {
             string producto = txtProducto.Text;
             string cantidad = txtCantidad.Text;
+            int CantidadTotal = int.Parse(txtCantidad.Text) + int.Parse(txtCantidad2.Text); /// SUMA DE CANTIDADES PARA MOSTRAR TOTAL
 
             if (ViewState["Productos"] == null)
             {
@@ -46,7 +47,8 @@ namespace TP2_GRUPO_15
             {
                 tabla += "<tr><td>" + product + "</td></tr>";
             }
-            tabla += "<tr><td>TOTAL</td></tr>";
+            
+            tabla += "<tr><td>TOTAL</td><td>" + CantidadTotal + "</td></tr>"; /// MUESTRA CANTIDAD TOTAL
             tabla += "</table>";
 
             lblTabla.Text = tabla;
