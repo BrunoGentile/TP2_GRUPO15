@@ -37,8 +37,11 @@ namespace TP2_GRUPO_15
                 return;
             }else if ( Usuario == "claudio" && Clave == "casas")
             {
+                Server.Transfer("Ejercicio4B.aspx");
+
                 /// INSTRUCCIONES
-            }else
+            }
+            else
             {
                 Server.Transfer("Ejercicio4C.aspx");
             }
