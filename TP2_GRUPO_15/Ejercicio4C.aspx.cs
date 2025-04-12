@@ -13,5 +13,11 @@ namespace TP2_GRUPO_15
         {
 
         }
+
+        protected void BtnVolver_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Ejercicio4A.aspx");
+        }
     }
+    
 }
