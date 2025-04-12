@@ -14,14 +14,28 @@ namespace TP2_GRUPO_15
 
         }
 
+        /// FUNCIÓN PARA CONVERTIR STRING A MINÚSCULA
+        
+        protected string ConverToMinuscula(string Palabra)
+        {
+
+            Palabra = Palabra.Trim().ToLower();
+
+            return Palabra;
+        }
+
         protected void btnValidar_Click1(object sender, EventArgs e)
         {
+
+            string Usuario = ConverToMinuscula(txtUsuario.Text); /// ALMACENO EL NOMBRE DEL USUARIO EN MINÚSCULA
+            string Clave = ConverToMinuscula(txtClave.Text); /// ALMACENO LA CONTRASEÑA DEL USUARIO EN MINÚSCULA
+
             if (string.IsNullOrWhiteSpace(txtUsuario.Text) || string.IsNullOrWhiteSpace(txtClave.Text))
             {
                 txtUsuario.BackColor = System.Drawing.Color.DarkRed;
                 txtClave.BackColor = System.Drawing.Color.DarkRed;
                 return;
-            }else if (txtUsuario.Text == "claudio" && txtClave.Text == "casas")
+            }else if ( Usuario == "claudio" && Clave == "casas")
             {
                 /// INSTRUCCIONES
             }else
