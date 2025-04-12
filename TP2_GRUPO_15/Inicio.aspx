@@ -16,6 +16,17 @@
         .auto-style3 {
             width: 212px;
         }
+        .auto-style4 {
+            height: 23px;
+        }
+        .auto-style5 {
+            width: 119px;
+            height: 23px;
+        }
+        .auto-style6 {
+            width: 212px;
+            height: 23px;
+        }
     </style>
 </head>
 <body>
@@ -41,13 +52,13 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td class="auto-style2">&nbsp;</td>
-            <td class="auto-style3">&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
+            <td class="auto-style4"></td>
+            <td class="auto-style4"></td>
+            <td class="auto-style5"></td>
+            <td class="auto-style6"></td>
+            <td class="auto-style4"></td>
+            <td class="auto-style4"></td>
+            <td class="auto-style4"></td>
         </tr>
         <tr>
             <td>&nbsp;</td>
