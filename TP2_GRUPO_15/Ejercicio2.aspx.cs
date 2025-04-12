@@ -26,8 +26,5 @@ namespace TP2_GRUPO_15
         {
             Response.Redirect("Inicio.aspx");
         }
-=======
-      
->>>>>>> 539de32622de4064004ad27ed4552b83f1caae6f
     }
 }
