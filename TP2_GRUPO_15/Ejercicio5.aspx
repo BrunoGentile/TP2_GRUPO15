@@ -326,7 +326,9 @@
                 </tr>
                 <tr>
                     <td class="auto-style6"></td>
-                    <td class="auto-style7">&nbsp;</td>
+                    <td class="auto-style7">
+                        <asp:Label ID="LBL_PrecioFinal" runat="server"></asp:Label>
+                    </td>
                     <td class="auto-style8"></td>
                     <td class="auto-style9">
                     </td>

@@ -57,6 +57,7 @@ namespace TP2_GRUPO_15
         {
             
             float PrecioTotal = CalcularPrecioTotal();
+            LBL_PrecioFinal.Text = "El precio final es de " + PrecioTotal.ToString("F2") + " $";
 
         }
     }
