@@ -16,9 +16,6 @@
         .auto-style3 {
             width: 52px;
         }
-        .auto-style4 {
-            width: 55px;
-        }
         .auto-style5 {
             width: 42px;
         }
@@ -31,10 +28,6 @@
         }
         .auto-style8 {
             width: 42px;
-            height: 23px;
-        }
-        .auto-style9 {
-            width: 55px;
             height: 23px;
         }
         .auto-style10 {
@@ -52,10 +45,6 @@
             width: 42px;
             height: 26px;
         }
-        .auto-style14 {
-            width: 55px;
-            height: 26px;
-        }
         .auto-style15 {
             width: 52px;
             height: 26px;
@@ -71,6 +60,17 @@
             height: 26px;
             width: 74px;
         }
+        .auto-style19 {
+            width: 145px;
+        }
+        .auto-style20 {
+            height: 23px;
+            width: 145px;
+        }
+        .auto-style21 {
+            height: 26px;
+            width: 145px;
+        }
     </style>
 </head>
 <body>
@@ -81,7 +81,7 @@
                     <td>&nbsp;</td>
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style4">&nbsp;</td>
+                    <td class="auto-style19">&nbsp;</td>
                     <td class="auto-style16">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -99,7 +99,7 @@
                     <td>&nbsp;</td>
                     <td class="auto-style2" style="font-family: Arial, Helvetica, sans-serif; font-size: large; font-weight: bold; font-style: italic; font-variant: normal; text-transform: none">Elija su configuracion </td>
                     <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style4">&nbsp;</td>
+                    <td class="auto-style19">&nbsp;</td>
                     <td class="auto-style16">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -117,7 +117,7 @@
                     <td>&nbsp;</td>
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style4">&nbsp;</td>
+                    <td class="auto-style19">&nbsp;</td>
                     <td class="auto-style16">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -135,7 +135,7 @@
                     <td class="auto-style6"></td>
                     <td class="auto-style7">Seleccione cantidad de memoria:</td>
                     <td class="auto-style8"></td>
-                    <td class="auto-style9"></td>
+                    <td class="auto-style20"></td>
                     <td class="auto-style17"></td>
                     <td class="auto-style6"></td>
                     <td class="auto-style6"></td>
@@ -153,7 +153,7 @@
                     <td class="auto-style6"></td>
                     <td class="auto-style7">&nbsp;</td>
                     <td class="auto-style8"></td>
-                    <td class="auto-style9"></td>
+                    <td class="auto-style20"></td>
                     <td class="auto-style17"></td>
                     <td class="auto-style6"></td>
                     <td class="auto-style6"></td>
@@ -174,7 +174,7 @@
                         </asp:DropDownList>
                     </td>
                     <td class="auto-style13"></td>
-                    <td class="auto-style14"></td>
+                    <td class="auto-style21"></td>
                     <td class="auto-style18"></td>
                     <td class="auto-style11"></td>
                     <td class="auto-style11"></td>
@@ -192,7 +192,7 @@
                     <td class="auto-style6"></td>
                     <td class="auto-style7"></td>
                     <td class="auto-style8"></td>
-                    <td class="auto-style9"></td>
+                    <td class="auto-style20"></td>
                     <td class="auto-style17"></td>
                     <td class="auto-style6"></td>
                     <td class="auto-style6"></td>
@@ -210,7 +210,7 @@
                     <td class="auto-style6"></td>
                     <td class="auto-style7" style="font-weight: 700">Seleccione accesorios:</td>
                     <td class="auto-style8"></td>
-                    <td class="auto-style9"></td>
+                    <td class="auto-style20"></td>
                     <td class="auto-style17"></td>
                     <td class="auto-style6"></td>
                     <td class="auto-style6"></td>
@@ -228,7 +228,7 @@
                     <td>&nbsp;</td>
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style4">&nbsp;</td>
+                    <td class="auto-style19">&nbsp;</td>
                     <td class="auto-style16">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -252,7 +252,7 @@
                         </asp:CheckBoxList>
                     </td>
                     <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style4">&nbsp;</td>
+                    <td class="auto-style19">&nbsp;</td>
                     <td class="auto-style16">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -270,7 +270,7 @@
                     <td class="auto-style6"></td>
                     <td class="auto-style7"></td>
                     <td class="auto-style8"></td>
-                    <td class="auto-style9"></td>
+                    <td class="auto-style20"></td>
                     <td class="auto-style17"></td>
                     <td class="auto-style6"></td>
                     <td class="auto-style6"></td>
@@ -290,7 +290,7 @@
                         <asp:Button ID="btnCalcularPrecio" runat="server" Text="Calcular Precio" Width="152px" OnClick="btnCalcularPrecio_Click" />
                     </td>
                     <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style4">
+                    <td class="auto-style19">
                         <asp:Button ID="btnInicio" runat="server" OnClick="btnInicio_Click" Text="Inicio" Width="52px" />
                     </td>
                     <td class="auto-style16">&nbsp;</td>
@@ -310,7 +310,7 @@
                     <td>&nbsp;</td>
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style4">&nbsp;</td>
+                    <td class="auto-style19">&nbsp;</td>
                     <td class="auto-style16">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -330,7 +330,8 @@
                         <asp:Label ID="LBL_PrecioFinal" runat="server"></asp:Label>
                     </td>
                     <td class="auto-style8"></td>
-                    <td class="auto-style9">
+                    <td class="auto-style20">
+                        <asp:Button ID="BTN_Dolarizar" runat="server" OnClick="BTN_Dolarizar_Click" Text="Convertir a Dolar" />
                     </td>
                     <td class="auto-style17"></td>
                     <td class="auto-style6"></td>
@@ -349,7 +350,7 @@
                     <td>&nbsp;</td>
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style4">&nbsp;</td>
+                    <td class="auto-style19">&nbsp;</td>
                     <td class="auto-style16">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -367,7 +368,7 @@
                     <td>&nbsp;</td>
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style4">&nbsp;</td>
+                    <td class="auto-style19">&nbsp;</td>
                     <td class="auto-style16">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>

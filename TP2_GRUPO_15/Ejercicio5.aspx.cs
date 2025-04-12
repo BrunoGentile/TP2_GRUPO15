@@ -60,5 +60,11 @@ namespace TP2_GRUPO_15
             LBL_PrecioFinal.Text = "El precio final es de " + PrecioTotal.ToString("F2") + " $";
 
         }
+
+        protected void BTN_Dolarizar_Click(object sender, EventArgs e) /// DOLARIZA EL PRECIO
+        {
+            float PrecioTotal = CalcularPrecioTotal() / 1074.09f;
+            LBL_PrecioFinal.Text = "El precio final es de " + PrecioTotal.ToString("F2") + " USD";
+        }
     }
 }
