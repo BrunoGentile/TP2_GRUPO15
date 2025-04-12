@@ -18,7 +18,9 @@ namespace TP2_GRUPO_15
         {
             if (string.IsNullOrWhiteSpace(txtUsuario.Text) || string.IsNullOrWhiteSpace(txtClave.Text))
             {
-                    return;
+                txtUsuario.BackColor = System.Drawing.Color.DarkRed;
+                txtClave.BackColor = System.Drawing.Color.DarkRed;
+                return;
             }else if (txtUsuario.Text == "claudio" && txtClave.Text == "casas")
             {
                 /// INSTRUCCIONES

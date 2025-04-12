@@ -11,14 +11,11 @@ namespace TP2_GRUPO_15
     public partial class Ejercicio2 : System.Web.UI.Page
     {
 
-
-
-    
-
-
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            chkTemas.Items.Add("Ciencias");
+            chkTemas.Items.Add("Literatura");
+            chkTemas.Items.Add("Historia");
         }
 
         protected void btnInicio_Click(object sender, EventArgs e)

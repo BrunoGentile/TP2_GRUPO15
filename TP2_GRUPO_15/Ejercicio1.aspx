@@ -77,13 +77,21 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style6"></td>
-                    <td class="auto-style7"></td>
-                    <td class="auto-style8"></td>
-                    <td class="auto-style6"></td>
-                    <td class="auto-style10"></td>
-                    <td class="auto-style12"></td>
-                    <td class="auto-style9"></td>
+                    <td class="auto-style6" id="txtProducto2"></td>
+                    <td class="auto-style7" id="txtProducto2">
+                        <asp:Label ID="Label1" runat="server" Text="Ingrese nombre del producto: "></asp:Label>
+                    </td>
+                    <td class="auto-style8" id="txtProducto2">
+                        <asp:TextBox ID="txtProducto2" runat="server" Width="149px"></asp:TextBox>
+                    </td>
+                    <td class="auto-style6" id="txtProducto2"></td>
+                    <td class="auto-style10" id="txtProducto2">
+                        <asp:Label ID="Label2" runat="server" Text="Cantidad:"></asp:Label>
+                    </td>
+                    <td class="auto-style12" id="txtProducto2">
+                        <asp:TextBox ID="txtCantidad2" runat="server" Width="100px"></asp:TextBox>
+                    </td>
+                    <td class="auto-style9" id="txtProducto2"></td>
                 </tr>
                 <tr>
                     <td class="auto-style6"></td>
