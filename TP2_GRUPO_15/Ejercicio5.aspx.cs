@@ -11,6 +11,10 @@ namespace TP2_GRUPO_15
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            //CARGAR DROPDOWNLIST
+            ddlMemoria.Items.Add("2 GB");
+            ddlMemoria.Items.Add("4 GB");
+            ddlMemoria.Items.Add("6 GB");
 
         }
 
