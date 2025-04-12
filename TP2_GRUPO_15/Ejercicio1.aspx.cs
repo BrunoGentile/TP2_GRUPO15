@@ -41,11 +41,13 @@ namespace TP2_GRUPO_15
             }
 
             string tabla = "<table border='1'>";
-            tabla += "<tr><td>Producto</td></tr>";
+            tabla += "<tr><td>Producto</td><td>Cantidades</td></tr>";
 
             foreach (string product in productos)
             {
-                tabla += "<tr><td>" + product + "</td></tr>";
+                tabla += "<tr><td>" + product + "</td><td>" + cantidad + "</td></tr>";
+
+
             }
             
             tabla += "<tr><td>TOTAL</td><td>" + CantidadTotal + "</td></tr>"; /// MUESTRA CANTIDAD TOTAL
