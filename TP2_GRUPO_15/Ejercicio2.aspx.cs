@@ -31,12 +31,12 @@ namespace TP2_GRUPO_15
 
             if (chkTemas.SelectedIndex == -1)
             {
-                // No se seleccionó ningún tema: mostrar mensaje y salir
+                
                 lblMensajeError.Text = "Debe seleccionar al menos un tema.";
                 return;
             }
 
-            // Si hay al menos un tema seleccionado, borramos el mensaje (opcional)
+           
             lblMensajeError.Text = "";
         }
 
