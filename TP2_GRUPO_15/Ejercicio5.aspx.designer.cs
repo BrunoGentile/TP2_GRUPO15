@@ -51,15 +51,6 @@ namespace TP2_GRUPO_15
         protected global::System.Web.UI.WebControls.Button btnCalcularPrecio;
 
         /// <summary>
-        /// Control btnReset.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnReset;
-
-        /// <summary>
         /// Control btnInicio.
         /// </summary>
         /// <remarks>
