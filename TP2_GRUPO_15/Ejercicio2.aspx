@@ -53,7 +53,7 @@
             <td class="auto-style4"></td>
             <td class="auto-style6">Nombre:</td>
             <td class="auto-style8">
-                <asp:TextBox ID="TextBox1" runat="server" Width="150px"></asp:TextBox>
+                <asp:TextBox ID="TextBox1" runat="server" Width="150px" OnTextChanged="TextBox1_TextChanged" AutoPostBack="true"></asp:TextBox>
             </td>
             <td class="auto-style2"></td>
             <td class="auto-style2">
@@ -75,7 +75,7 @@
             <td class="auto-style3">&nbsp;</td>
             <td class="auto-style5">Apellido:</td>
             <td class="auto-style7">
-                <asp:TextBox ID="TextBox2" runat="server" Width="150px"></asp:TextBox>
+                <asp:TextBox ID="TextBox2" runat="server" Width="150px" OnTextChanged="TextBox2_TextChanged" AutoPostBack="true"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
