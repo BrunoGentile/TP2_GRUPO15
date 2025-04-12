@@ -35,7 +35,7 @@
             width: 160px;
         }
         .auto-style9 {
-            width: 145px;
+            width: 103px;
         }
         .auto-style10 {
             width: 50px;
@@ -45,7 +45,7 @@
             height: 23px;
         }
         .auto-style12 {
-            width: 145px;
+            width: 103px;
             height: 23px;
         }
         .auto-style13 {
@@ -53,7 +53,7 @@
             height: 30px;
         }
         .auto-style14 {
-            width: 145px;
+            width: 103px;
             height: 30px;
         }
         .auto-style15 {
@@ -235,8 +235,10 @@
                 </tr>
                 <tr>
                     <td class="auto-style10">&nbsp;</td>
-                    <td class="auto-style9">&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style9">Zona:</td>
+                    <td>
+                        <asp:Label ID="LBL_Zona" runat="server"></asp:Label>
+                    </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>

@@ -11,6 +11,11 @@ namespace TP2_GRUPO_15
     public partial class Ejercicio2 : System.Web.UI.Page
     {
 
+        protected void VerZona() /// CAMBIA EL TEXTO DEL LABEL PARA MOSTRAR LA ZONA SELECCIONADA
+        {
+            LBL_Zona.Text = ddlCiudad.SelectedItem.Text;
+        }
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -36,7 +41,7 @@ namespace TP2_GRUPO_15
                 return;
             }
 
-           
+            VerZona(); /// COLOCA EN EL LABEL LA ZONA SELECCIONADA
             lblMensajeError.Text = "";
         }
 
