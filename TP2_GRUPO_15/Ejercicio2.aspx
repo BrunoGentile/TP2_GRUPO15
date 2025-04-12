@@ -56,7 +56,9 @@
                 <asp:TextBox ID="TextBox1" runat="server" Width="150px"></asp:TextBox>
             </td>
             <td class="auto-style2"></td>
-            <td class="auto-style2"></td>
+            <td class="auto-style2">
+                <asp:Button ID="btnInicio" runat="server" OnClick="btnInicio_Click" Text="Inicio" Width="55px" />
+            </td>
             <td class="auto-style2"></td>
             <td class="auto-style2"></td>
         </tr>

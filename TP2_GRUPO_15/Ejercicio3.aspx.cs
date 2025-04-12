@@ -7,13 +7,12 @@ using System.Web.UI.WebControls;
 
 namespace TP2_GRUPO_15
 {
-    public partial class Ejercicio2 : System.Web.UI.Page
+    public partial class Ejercicio3 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
-
         protected void btnInicio_Click(object sender, EventArgs e)
         {
             Response.Redirect("Inicio.aspx");

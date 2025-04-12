@@ -11,7 +11,7 @@ namespace TP2_GRUPO_15
 {
 
 
-    public partial class Ejercicio2
+    public partial class Ejercicio3
     {
 
         /// <summary>
@@ -24,13 +24,13 @@ namespace TP2_GRUPO_15
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Control TextBox1.
+        /// Control linkbRojo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.LinkButton linkbRojo;
 
         /// <summary>
         /// Control btnInicio.
@@ -42,21 +42,30 @@ namespace TP2_GRUPO_15
         protected global::System.Web.UI.WebControls.Button btnInicio;
 
         /// <summary>
-        /// Control TextBox2.
+        /// Control linkbAzul.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.LinkButton linkbAzul;
 
         /// <summary>
-        /// Control ddlCiudad.
+        /// Control linkbVerde.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlCiudad;
+        protected global::System.Web.UI.WebControls.LinkButton linkbVerde;
+
+        /// <summary>
+        /// Control Label1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label1;
     }
 }
