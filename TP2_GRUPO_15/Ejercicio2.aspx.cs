@@ -44,6 +44,18 @@ namespace TP2_GRUPO_15
                 return true;
             }
         }
+
+        private string firstLetterToUpper(string texto)
+        {
+            if (string.IsNullOrWhiteSpace(texto))
+            {
+                return "";
+            }
+
+            texto = texto.ToLower();
+            return char.ToUpper(texto[0]) + texto.Substring(1);
+        }
+
         protected void btnVerResumen_Click(object sender, EventArgs e)
         {
             bool nombreValido = EsCampoValido(txtNombre);

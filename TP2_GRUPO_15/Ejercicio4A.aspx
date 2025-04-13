@@ -97,7 +97,9 @@
                     <td class="auto-style7">
                         <asp:Button ID="btnValidar" runat="server" OnClick="btnValidar_Click1" Text="Validar" />
                     </td>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:Button ID="btnInicio" runat="server" OnClick="btnInicio_Click" Text="Inicio" Width="55px" />
+                    </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
