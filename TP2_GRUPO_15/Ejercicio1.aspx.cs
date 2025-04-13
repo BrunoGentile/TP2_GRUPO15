@@ -18,8 +18,23 @@ namespace TP2_GRUPO_15
         {
             string producto = txtProducto.Text;
             string cantidad = txtCantidad.Text;
-            int CantidadTotal = int.Parse(txtCantidad.Text) + int.Parse(txtCantidad2.Text); /// SUMA DE CANTIDADES PARA MOSTRAR TOTAL
 
+
+            if (txtCantidad.Text.All(char.IsLetter) || int.Parse(txtCantidad.Text) <= 0)
+            {
+                txtCantidad.BackColor = System.Drawing.Color.Red;
+                return;
+            }
+            if (txtCantidad2.Text.All(char.IsLetter) || int.Parse(txtCantidad2.Text) <= 0)
+            {
+                txtCantidad2.BackColor = System.Drawing.Color.Red;
+                return;
+            }
+
+            txtCantidad.BackColor = System.Drawing.Color.White;
+            txtCantidad2.BackColor = System.Drawing.Color.White;
+
+            int CantidadTotal = int.Parse(txtCantidad.Text) + int.Parse(txtCantidad2.Text); /// SUMA DE CANTIDADES PARA MOSTRAR TOTAL
             if (ViewState["Productos"] == null)
             {
                 ViewState["Productos"] = new List<string>();
