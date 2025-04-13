@@ -40,6 +40,7 @@ namespace TP2_GRUPO_15
                 txtUsuario.BackColor = System.Drawing.Color.DarkRed;
                 txtClave.BackColor = System.Drawing.Color.DarkRed;
                 return;
+            
             }else if ( Usuario == "claudio" && Clave == "casas")
             {
                 Session["IntentosFallidos"] = 0;
