@@ -69,7 +69,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style2">
-                        <asp:LinkButton ID="linkbVerde" runat="server">Verde</asp:LinkButton>
+                        <asp:LinkButton ID="linkbVerde" runat="server" OnClick="linkbVerde_Click">Verde</asp:LinkButton>
                     </td>
                     <td class="auto-style3">&nbsp;</td>
                     <td>
@@ -90,7 +90,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style4">
-                        <asp:Label ID="Label1" runat="server" Text="Texto coloreado"></asp:Label>
+                        <asp:Label ID="lblTexto" runat="server" Text="Texto coloreado"></asp:Label>
                     </td>
                     <td class="auto-style5"></td>
                     <td class="auto-style6"></td>

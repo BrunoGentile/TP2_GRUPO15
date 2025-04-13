@@ -31,8 +31,29 @@ namespace TP2_GRUPO_15
             Response.Redirect("Inicio.aspx");
         }
 
+        private bool EsCampoValido(TextBox txt)
+        {
+            if (string.IsNullOrWhiteSpace(txt.Text))
+            {
+                txt.BackColor = System.Drawing.Color.Red;
+                return false;
+            }
+            else
+            {
+                txt.BackColor = System.Drawing.Color.White;
+                return true;
+            }
+        }
         protected void btnVerResumen_Click(object sender, EventArgs e)
         {
+            bool nombreValido = EsCampoValido(txtNombre);
+            bool apellidoValido = EsCampoValido(txtApellido);
+
+            if (!nombreValido || !apellidoValido)
+            {
+                return;
+            }
+
 
             if (chkTemas.SelectedIndex == -1)
             {

@@ -17,5 +17,10 @@ namespace TP2_GRUPO_15
         {
             Response.Redirect("Inicio.aspx");
         }
+
+        protected void linkbVerde_Click(object sender, EventArgs e)
+        {
+           lblTexto.ForeColor = System.Drawing.Color.Green;
+        }
     }
 }

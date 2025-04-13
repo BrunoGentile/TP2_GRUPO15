@@ -16,9 +16,34 @@ namespace TP2_GRUPO_15
         }
         protected void BtnTabla_Click(object sender, EventArgs e)
         {
-            string producto = txtProducto.Text;
-            string cantidad = txtCantidad.Text;
 
+            if (txtProducto.Text.Length == 0 || txtCantidad.Text.Length == 0)
+            {
+                txtProducto.BackColor = System.Drawing.Color.Red;
+                txtCantidad.BackColor = System.Drawing.Color.Red;
+                return;
+
+            }
+            else
+            {
+                txtProducto.BackColor = System.Drawing.Color.White;
+                txtCantidad.BackColor = System.Drawing.Color.White;
+
+
+            }
+            if (txtProducto2.Text.Length == 0 || txtCantidad2.Text.Length == 0)
+            {
+                txtProducto2.BackColor = System.Drawing.Color.Red;
+                txtCantidad2.BackColor = System.Drawing.Color.Red;
+                return;
+
+            }
+            else
+            {
+                txtProducto2.BackColor = System.Drawing.Color.White;
+                txtCantidad2.BackColor = System.Drawing.Color.White;
+
+            }
 
             if (txtCantidad.Text.All(char.IsLetter) || int.Parse(txtCantidad.Text) <= 0)
             {
@@ -31,41 +56,48 @@ namespace TP2_GRUPO_15
                 return;
             }
 
-            txtCantidad.BackColor = System.Drawing.Color.White;
-            txtCantidad2.BackColor = System.Drawing.Color.White;
+            
 
-            int CantidadTotal = int.Parse(txtCantidad.Text) + int.Parse(txtCantidad2.Text); /// SUMA DE CANTIDADES PARA MOSTRAR TOTAL
             if (ViewState["Productos"] == null)
             {
                 ViewState["Productos"] = new List<string>();
             }
 
+
+            if (ViewState["Cantidades"] == null)
+            {
+                ViewState["Cantidades"] = new List<int>();
+            }
+
+            string producto = txtProducto.Text;
+            int cantidad = int.Parse(txtCantidad.Text);
+            string producto2 = txtProducto2.Text;
+            int cantidad2 = int.Parse(txtCantidad2.Text);
+
+
             List<string> productos = ViewState["Productos"] as List<string>;
+            List<int> cantidades = ViewState["Cantidades"] as List<int>;
 
+            productos.Add(producto);
+            cantidades.Add(cantidad);
+            productos.Add(producto2);
+            cantidades.Add(cantidad2);
+           
 
-            if (producto.Length == 0 || cantidad.Length == 0)
-            {
-                txtProducto.BackColor = System.Drawing.Color.Red;
-                txtCantidad.BackColor = System.Drawing.Color.Red;
-            }
-            else
-            {
-                txtProducto.BackColor = System.Drawing.Color.White;
-                txtCantidad.BackColor = System.Drawing.Color.White;
-                productos.Add(producto);
-            }
-
+      
+            
             string tabla = "<table border='1'>";
             tabla += "<tr><td>Producto</td><td>Cantidades</td></tr>";
-
-            foreach (string product in productos)
+            
+            for (int i = 0; i < productos.Count; i++)
             {
-                tabla += "<tr><td>" + product + "</td><td>" + cantidad + "</td></tr>";
-
+            
+                tabla += "<tr><td>" + productos[i] + "</td><td>" +  cantidades[i] + "</td></tr>";
+                
 
             }
             
-            tabla += "<tr><td>TOTAL</td><td>" + CantidadTotal + "</td></tr>"; /// MUESTRA CANTIDAD TOTAL
+            tabla += "<tr><td>TOTAL</td><td>" + "" + "</td></tr>"; /// MUESTRA CANTIDAD TOTAL
             tabla += "</table>";
 
             lblTabla.Text = tabla;
