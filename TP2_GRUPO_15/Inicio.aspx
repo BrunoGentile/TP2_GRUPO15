@@ -27,6 +27,17 @@
             width: 212px;
             height: 23px;
         }
+        .auto-style7 {
+            height: 26px;
+        }
+        .auto-style8 {
+            width: 119px;
+            height: 26px;
+        }
+        .auto-style9 {
+            width: 212px;
+            height: 26px;
+        }
     </style>
 </head>
 <body>
@@ -43,20 +54,30 @@
             <td><strong></strong></td>
         </tr>
         <tr>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td class="auto-style2">&nbsp;</td>
-            <td class="auto-style3">&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
+            <td class="auto-style7"></td>
+            <td class="auto-style7"></td>
+            <td class="auto-style8"></td>
+            <td class="auto-style9"></td>
+            <td class="auto-style7"></td>
+            <td class="auto-style7"></td>
+            <td class="auto-style7"></td>
         </tr>
         <tr>
-            <td class="auto-style4"></td>
-            <td class="auto-style4"></td>
-            <td class="auto-style5"></td>
-            <td class="auto-style6"></td>
-            <td class="auto-style4"></td>
+            <td class="auto-style4">
+                <asp:Button ID="Button1" runat="server" Text="EJERCICIO 1" />
+            </td>
+            <td class="auto-style4">
+                <asp:Button ID="Button2" runat="server" Text="Button" />
+            </td>
+            <td class="auto-style5">
+                <asp:Button ID="Button3" runat="server" Text="Button" />
+            </td>
+            <td class="auto-style6">
+                <asp:Button ID="Button4" runat="server" Text="Button" />
+            </td>
+            <td class="auto-style4">
+                <asp:Button ID="Button5" runat="server" Text="Button" />
+            </td>
             <td class="auto-style4"></td>
             <td class="auto-style4"></td>
         </tr>

@@ -57,6 +57,7 @@ namespace TP2_GRUPO_15
 
         protected void btnCalcularPrecio_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
 
             if (PrecioTotal == 4251){
                 PrecioTotal *= 0.9f;
@@ -78,6 +79,22 @@ namespace TP2_GRUPO_15
             {
                 ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Seleccione por lo menos un accesorio.');", true);
             }
+=======
+            if (ViewState["PrecioAnterior"] != null)
+            {
+                float precioAnterior = (float)ViewState["PrecioAnterior"];
+                lblAnterior.Text = "Precio anterior: " + precioAnterior.ToString("F2") + " $";
+            }
+           // string precioSeleccionado = ddlMemoria.SelectedValue;
+
+           // decimal precioMemoria = decimal.TryParse(precioSeleccionado, out decimal resultado) ? resultado : 0;
+
+            float PrecioTotal = CalcularPrecioTotal();
+            LBL_PrecioFinal.Text = "El precio final es de " + PrecioTotal.ToString("F2") + " $";
+
+            ViewState["PrecioAnterior"] = PrecioTotal;
+
+>>>>>>> 5def9ef... lblAnterior ej 5
         }
         protected void BTN_Dolarizar_Click(object sender, EventArgs e) /// DOLARIZA EL PRECIO
         {
