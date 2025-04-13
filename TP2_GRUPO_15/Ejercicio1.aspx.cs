@@ -82,10 +82,9 @@ namespace TP2_GRUPO_15
             cantidades.Add(cantidad);
             productos.Add(producto2);
             cantidades.Add(cantidad2);
-           
 
-      
-            
+            int cantidadTotal = 0;
+
             string tabla = "<table border='1'>";
             tabla += "<tr><td>Producto</td><td>Cantidades</td></tr>";
             
@@ -93,11 +92,11 @@ namespace TP2_GRUPO_15
             {
             
                 tabla += "<tr><td>" + productos[i] + "</td><td>" +  cantidades[i] + "</td></tr>";
-                
-
+                cantidadTotal += cantidades[i];
+               
             }
             
-            tabla += "<tr><td>TOTAL</td><td>" + "" + "</td></tr>"; /// MUESTRA CANTIDAD TOTAL
+            tabla += "<tr><td>TOTAL</td><td>" + cantidadTotal + "</td></tr>"; /// MUESTRA CANTIDAD TOTAL
             tabla += "</table>";
 
             lblTabla.Text = tabla;
