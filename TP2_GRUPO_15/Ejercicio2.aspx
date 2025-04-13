@@ -35,7 +35,7 @@
             width: 160px;
         }
         .auto-style9 {
-            width: 103px;
+            width: 158px;
         }
         .auto-style10 {
             width: 50px;
@@ -45,7 +45,7 @@
             height: 23px;
         }
         .auto-style12 {
-            width: 103px;
+            width: 158px;
             height: 23px;
         }
         .auto-style13 {
@@ -53,7 +53,7 @@
             height: 40px;
         }
         .auto-style14 {
-            width: 103px;
+            width: 158px;
             height: 40px;
         }
         .auto-style15 {
@@ -71,7 +71,7 @@
             height: 48px;
         }
         .auto-style19 {
-            width: 103px;
+            width: 158px;
             height: 48px;
         }
         .auto-style20 {
@@ -263,6 +263,26 @@
                 <tr>
                     <td class="auto-style10">&nbsp;</td>
                     <td class="auto-style9">&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style10">&nbsp;</td>
+                    <td class="auto-style9">Los temas elegidos son:</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style10">&nbsp;</td>
+                    <td class="auto-style9">
+                        <asp:Label ID="lblTemas" runat="server"></asp:Label>
+                    </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>

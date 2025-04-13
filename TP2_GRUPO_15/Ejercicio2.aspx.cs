@@ -44,6 +44,19 @@ namespace TP2_GRUPO_15
             LBL_Zona.Text = "<b>" + ddlCiudad.SelectedItem.Text + "</b>";
         }
 
+        protected void VerTemas()
+        {
+            lblTemas.Text = "";
+
+            foreach (ListItem item in chkTemas.Items)
+            {
+                if (item.Selected)
+                {
+                    lblTemas.Text += "<b>" + item.Text + "</b><br/>";
+                }
+            }
+        }
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -113,6 +126,9 @@ namespace TP2_GRUPO_15
             lblMensajeError.Text = "";
 
             VerZona(); /// COLOCA EN EL LABEL LA ZONA SELECCIONADA
+            lblMensajeError.Text = "";
+
+            VerTemas();
             lblMensajeError.Text = "";
         }
 
