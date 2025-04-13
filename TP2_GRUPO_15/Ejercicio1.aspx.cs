@@ -14,6 +14,7 @@ namespace TP2_GRUPO_15
         {
 
         }
+ 
         protected void BtnTabla_Click(object sender, EventArgs e)
         {
 
@@ -82,30 +83,31 @@ namespace TP2_GRUPO_15
             cantidades.Add(cantidad);
             productos.Add(producto2);
             cantidades.Add(cantidad2);
+
+
            
 
-      
-            
-            string tabla = "<table border='1'>";
-            tabla += "<tr><td>Producto</td><td>Cantidades</td></tr>";
-            
-            for (int i = 0; i < productos.Count; i++)
-            {
-            
-                tabla += "<tr><td>" + productos[i] + "</td><td>" +  cantidades[i] + "</td></tr>";
-                
+                string tabla = "<table border='1'>";
+                tabla += "<tr><td>Producto</td><td>Cantidades</td></tr>";
 
-            }
+                for (int i = 0; i < productos.Count; i++)
+                {
+
+                    tabla += "<tr><td>" + productos[i] + "</td><td>" + cantidades[i] + "</td></tr>";
+
+
+                }
+
+                tabla += "<tr><td>TOTAL</td><td>" + "" + "</td></tr>"; /// MUESTRA CANTIDAD TOTAL
+                tabla += "</table>";
+
+                lblTabla.Text = tabla;
+
+                txtProducto.Text = "";
+                txtProducto2.Text = "";
+                txtCantidad.Text = "";
+                txtCantidad2.Text = "";
             
-            tabla += "<tr><td>TOTAL</td><td>" + "" + "</td></tr>"; /// MUESTRA CANTIDAD TOTAL
-            tabla += "</table>";
-
-            lblTabla.Text = tabla;
-
-            txtProducto.Text = "";
-            txtProducto2.Text = "";
-            txtCantidad.Text = "";
-            txtCantidad2.Text = "";
 
         }
 
@@ -113,5 +115,7 @@ namespace TP2_GRUPO_15
         {
             Response.Redirect("Inicio.aspx");
         }
+
+        
     }
 }
