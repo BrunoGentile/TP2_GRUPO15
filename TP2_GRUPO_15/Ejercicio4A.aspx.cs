@@ -11,7 +11,12 @@ namespace TP2_GRUPO_15
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["IntentosFallidos"] == null)
+            {
+                Session["IntentosFallidos"] = 0;
+            }
+            
+            lblIntentos.Text = "Intentos fallidos: " + Session["IntentosFallidos"].ToString();
         }
 
         /// FUNCIÓN PARA CONVERTIR STRING A MINÚSCULA
@@ -37,12 +42,17 @@ namespace TP2_GRUPO_15
                 return;
             }else if ( Usuario == "claudio" && Clave == "casas")
             {
+                Session["IntentosFallidos"] = 0;
                 Server.Transfer("Ejercicio4B.aspx");
 
                 /// INSTRUCCIONES
             }
             else
             {
+                // Incrementar los intentos fallidos
+                Session["IntentosFallidos"] = (int)Session["IntentosFallidos"] + 1;
+                // Mostrar el número de intentos fallidos
+                lblIntentos.Text = "Intentos fallidos: " + Session["IntentosFallidos"].ToString();
                 Server.Transfer("Ejercicio4C.aspx");
             }
         }
