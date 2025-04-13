@@ -42,10 +42,12 @@ namespace TP2_GRUPO_15
         protected void Page_Load(object sender, EventArgs e)
         {
             //CARGAR DROPDOWNLIST
-            ddlMemoria.Items.Add("2 GB");
-            ddlMemoria.Items.Add("4 GB");
-            ddlMemoria.Items.Add("6 GB");
-
+            if (!IsPostBack)
+            {
+                ddlMemoria.Items.Add("2 GB");
+                ddlMemoria.Items.Add("4 GB");
+                ddlMemoria.Items.Add("6 GB");
+            }
         }
 
         protected void btnInicio_Click(object sender, EventArgs e)
@@ -65,6 +67,21 @@ namespace TP2_GRUPO_15
         {
             float PrecioTotal = CalcularPrecioTotal() / 1074.09f;
             LBL_PrecioFinal.Text = "El precio final es de " + PrecioTotal.ToString("F2") + " USD";
+        }
+
+        protected void btnReset_Click(object sender, EventArgs e)
+        {
+            // Reiniciar selección del dropdown
+            ddlMemoria.SelectedIndex = -1;
+
+            // Destildar todos los checkboxes
+            foreach (ListItem item in cblAccesorios.Items)
+            {
+                item.Selected = false;
+            }
+
+            // Limpiar el texto del label del precio final
+            LBL_PrecioFinal.Text = "";
         }
     }
 }
