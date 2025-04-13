@@ -57,14 +57,11 @@ namespace TP2_GRUPO_15
 
         protected void btnCalcularPrecio_Click(object sender, EventArgs e)
         {
-
-           // string precioSeleccionado = ddlMemoria.SelectedValue;
-
-           // decimal precioMemoria = decimal.TryParse(precioSeleccionado, out decimal resultado) ? resultado : 0;
-
+            
             float PrecioTotal = CalcularPrecioTotal();
             LBL_PrecioFinal.Text = "El precio final es de " + PrecioTotal.ToString("F2") + " $";
 
+            ViewState["PrecioAnterior"] = PrecioTotal;
         }
 
         protected void BTN_Dolarizar_Click(object sender, EventArgs e) /// DOLARIZA EL PRECIO
