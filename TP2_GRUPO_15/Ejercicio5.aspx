@@ -368,7 +368,9 @@
                     <td>&nbsp;</td>
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style19">&nbsp;</td>
+                    <td class="auto-style19">
+                        <asp:Button ID="btnReset" runat="server" OnClick="btnReset_Click" Text="Reset" />
+                    </td>
                     <td class="auto-style16">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
