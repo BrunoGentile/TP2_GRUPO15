@@ -105,7 +105,6 @@ namespace TP2_GRUPO_15
             else
             {
                 lblMensajeError.Text = "";
-              //  Server.Transfer("Ejercicio2B.aspx");
             }
             VerNombre();
             lblMensajeError.Text = "";
