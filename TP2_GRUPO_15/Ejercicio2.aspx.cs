@@ -29,12 +29,12 @@ namespace TP2_GRUPO_15
 
 
         }
-        protected void VerNombre() /// CAMBIA EL TEXTO DEL LABEL PARA MOSTRAR EL NOMBRE SELECCIONADO
+        protected void VerNombre() /// MUESTRA EL TEXTO DEL LABEL PARA MOSTRAR EL NOMBRE 
         {
             string nombre = txtNombre.Text;
             LBL_Nombre.Text = "<b>" + nombre + "</b>";
         }
-        protected void VerApellido() /// CAMBIA EL TEXTO DEL LABEL PARA MOSTRAR EL APELLIDO SELECCIONADO
+        protected void VerApellido() /// MUESTRA EL TEXTO DEL LABEL PARA MOSTRAR EL APELLIDO
         {
             string apellido = txtApellido.Text;
             LBL_Apellido.Text = "<b>" + apellido + "</b>";        

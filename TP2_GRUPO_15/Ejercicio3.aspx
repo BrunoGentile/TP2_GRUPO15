@@ -72,7 +72,7 @@
                         <asp:LinkButton ID="linkbVerde" runat="server" OnClick="linkbVerde_Click">Verde</asp:LinkButton>
                     </td>
                     <td class="auto-style3">
-                        <asp:Button ID="Btn_restablecer" runat="server" OnClick="Btn_restablecer_Click" Text="restablecer todo" />
+                        <asp:Button ID="Btn_restablecer" runat="server" OnClick="Btn_restablecer_Click" Text="restablecer color" />
                     </td>
                     <td>
                         &nbsp;</td>
