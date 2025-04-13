@@ -11,7 +11,9 @@ namespace TP2_GRUPO_15
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            string usuario;
+            usuario = Request["txtUsuario"].ToString();
+            lblMensaje.Text = "Bienvenido a mi página Sr/a " + usuario;
         }
     }
 }

@@ -11,13 +11,13 @@
             width: 100%;
         }
         .auto-style2 {
-            width: 524px;
+            width: 506px;
         }
         .auto-style3 {
             height: 23px;
         }
         .auto-style4 {
-            width: 524px;
+            width: 506px;
             height: 23px;
         }
     </style>
@@ -56,7 +56,7 @@
                 <tr>
                     <td>&nbsp;</td>
                     <td class="auto-style2">
-                        <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Italic="False" Font-Size="X-Large" Text="Bienvenido a mi pagina Sr./a Claudio"></asp:Label>
+                        <asp:Label ID="lblMensaje" runat="server" Font-Bold="True" Font-Size="X-Large"></asp:Label>
                     </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -24,9 +23,9 @@ namespace TP2_GRUPO_15
            lblTexto.ForeColor = System.Drawing.Color.Green;
         }
 
-        protected void linkbAzul_Click(object sender, EventArgs e)
+        protected void Btn_restablecer_Click(object sender, EventArgs e)
         {
-            lblTexto.ForeColor = System.Drawing.Color.Blue;
+            lblTexto.ForeColor = System.Drawing.Color.Black;
         }
     }
 }

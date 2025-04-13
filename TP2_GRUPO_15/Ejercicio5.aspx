@@ -97,7 +97,7 @@
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td class="auto-style2" style="font-family: Arial, Helvetica, sans-serif; font-size: large; font-weight: bold; font-style: italic; font-variant: normal; text-transform: none">Elija su configuracion </td>
+                    <td class="auto-style2" style="font-family: Arial, Helvetica, sans-serif; font-size: large; font-weight: bold; font-style: italic; font-variant: normal; text-transform: none">Elija su configuración </td>
                     <td class="auto-style5">&nbsp;</td>
                     <td class="auto-style19">&nbsp;</td>
                     <td class="auto-style16">&nbsp;</td>
@@ -226,24 +226,6 @@
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td class="auto-style2">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style19">&nbsp;</td>
-                    <td class="auto-style16">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td class="auto-style3">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
                     <td class="auto-style2">
                         <asp:CheckBoxList ID="cblAccesorios" runat="server">
                             <asp:ListItem Value="0">Monitor LCD</asp:ListItem>
@@ -268,7 +250,28 @@
                 </tr>
                 <tr>
                     <td class="auto-style6"></td>
-                    <td class="auto-style7"></td>
+                    <td class="auto-style7">
+                    </td>
+                    <td class="auto-style8"></td>
+                    <td class="auto-style20"></td>
+                    <td class="auto-style17"></td>
+                    <td class="auto-style6"></td>
+                    <td class="auto-style6"></td>
+                    <td class="auto-style6"></td>
+                    <td class="auto-style6"></td>
+                    <td class="auto-style10"></td>
+                    <td class="auto-style6"></td>
+                    <td class="auto-style6"></td>
+                    <td class="auto-style6"></td>
+                    <td class="auto-style6"></td>
+                    <td class="auto-style6"></td>
+                    <td class="auto-style6"></td>
+                </tr>
+                <tr>
+                    <td class="auto-style6"></td>
+                    <td class="auto-style7">
+                        <asp:Button ID="btnCalcularPrecio" runat="server" Text="Calcular Precio" Width="152px" OnClick="btnCalcularPrecio_Click" />
+                    </td>
                     <td class="auto-style8"></td>
                     <td class="auto-style20"></td>
                     <td class="auto-style17"></td>
@@ -287,8 +290,7 @@
                 <tr>
                     <td>&nbsp;</td>
                     <td class="auto-style2">
-                        <asp:Button ID="btnCalcularPrecio" runat="server" Text="Calcular Precio" Width="152px" OnClick="btnCalcularPrecio_Click" />
-                    </td>
+                        &nbsp;</td>
                     <td class="auto-style5">&nbsp;</td>
                     <td class="auto-style19">
                         <asp:Button ID="btnInicio" runat="server" OnClick="btnInicio_Click" Text="Inicio" Width="52px" />
@@ -308,7 +310,9 @@
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td class="auto-style2">&nbsp;</td>
+                    <td class="auto-style2">
+                        <asp:Label ID="lblAnterior" runat="server"></asp:Label>
+                    </td>
                     <td class="auto-style5">&nbsp;</td>
                     <td class="auto-style19">&nbsp;</td>
                     <td class="auto-style16">&nbsp;</td>

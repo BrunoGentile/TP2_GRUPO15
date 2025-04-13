@@ -58,5 +58,9 @@ namespace TP2_GRUPO_15
             }
         }
 
+        protected void btnInicio_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Inicio.aspx");
+        }
     }
 }
