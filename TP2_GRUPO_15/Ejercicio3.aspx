@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Ejercicio 3</title>
+    <title>ERROR</title>
     <style type="text/css">
         .auto-style1 {
             width: 100%;
@@ -44,7 +44,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style2">
-                        <asp:LinkButton ID="linkbRojo" runat="server" OnClick="linkbRojo_Click">Rojo</asp:LinkButton>
+                        <asp:LinkButton ID="linkbRojo" runat="server">Rojo</asp:LinkButton>
                     </td>
                     <td class="auto-style3">
                         <asp:Button ID="btnInicio" runat="server" Text="Inicio" OnClick="btnInicio_Click" />
@@ -56,22 +56,24 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style4">
-                        <asp:LinkButton ID="linkbAzul" runat="server" OnClick="linkbAzul_Click">Azul</asp:LinkButton>
+                    <td class="auto-style2">
+                        <asp:LinkButton ID="linkbAzul" runat="server">Azul</asp:LinkButton>
                     </td>
-                    <td class="auto-style5"></td>
-                    <td class="auto-style6">
-                        </td>
-                    <td class="auto-style6"></td>
-                    <td class="auto-style6"></td>
-                    <td class="auto-style6"></td>
-                    <td class="auto-style6"></td>
+                    <td class="auto-style3">&nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style2">
                         <asp:LinkButton ID="linkbVerde" runat="server" OnClick="linkbVerde_Click">Verde</asp:LinkButton>
                     </td>
-                    <td class="auto-style3">&nbsp;</td>
+                    <td class="auto-style3">
+                        <asp:Button ID="Btn_restablecer" runat="server" OnClick="Btn_restablecer_Click" Text="restablecer todo" />
+                    </td>
                     <td>
                         &nbsp;</td>
                     <td>&nbsp;</td>

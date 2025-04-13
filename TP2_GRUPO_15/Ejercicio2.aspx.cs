@@ -9,11 +9,39 @@ using System.Web.UI.WebControls;
 namespace TP2_GRUPO_15
 {
     public partial class Ejercicio2 : System.Web.UI.Page
+
     {
 
+
+        protected void ValidarCampos(object sender, EventArgs e)
+        {
+            if (txtNombre.Text.Length == 0 && txtApellido.Text.Length == 0)
+            {
+                txtNombre.BackColor = System.Drawing.Color.Red;
+                txtApellido.BackColor = System.Drawing.Color.Red;
+                return;
+            }
+            else
+            {
+                txtNombre.BackColor = System.Drawing.Color.White;
+                txtApellido.BackColor = System.Drawing.Color.White;
+            }
+
+
+        }
+        protected void VerNombre() /// CAMBIA EL TEXTO DEL LABEL PARA MOSTRAR EL NOMBRE SELECCIONADO
+        {
+            string nombre = txtNombre.Text;
+            LBL_Nombre.Text = "<b>" + nombre + "</b>";
+        }
+        protected void VerApellido() /// CAMBIA EL TEXTO DEL LABEL PARA MOSTRAR EL APELLIDO SELECCIONADO
+        {
+            string apellido = txtApellido.Text;
+            LBL_Apellido.Text = "<b>" + apellido + "</b>";        
+        }
         protected void VerZona() /// CAMBIA EL TEXTO DEL LABEL PARA MOSTRAR LA ZONA SELECCIONADA
         {
-            LBL_Zona.Text = ddlCiudad.SelectedItem.Text;
+            LBL_Zona.Text = "<b>" + ddlCiudad.SelectedItem.Text + "</b>";
         }
 
         protected void Page_Load(object sender, EventArgs e)
@@ -58,6 +86,7 @@ namespace TP2_GRUPO_15
 
         protected void btnVerResumen_Click(object sender, EventArgs e)
         {
+
             bool nombreValido = EsCampoValido(txtNombre);
             bool apellidoValido = EsCampoValido(txtApellido);
 
@@ -76,12 +105,21 @@ namespace TP2_GRUPO_15
             else
             {
                 lblMensajeError.Text = "";
-                Server.Transfer("Ejercicio2B.aspx");
+              //  Server.Transfer("Ejercicio2B.aspx");
             }
+            VerNombre();
+            lblMensajeError.Text = "";
 
-                VerZona(); /// COLOCA EN EL LABEL LA ZONA SELECCIONADA
+            VerApellido();
+            lblMensajeError.Text = "";
+
+            VerZona(); /// COLOCA EN EL LABEL LA ZONA SELECCIONADA
             lblMensajeError.Text = "";
         }
+
+
+        
+
 
     }
         
