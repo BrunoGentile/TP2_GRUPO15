@@ -29,12 +29,12 @@ namespace TP2_GRUPO_15
 
 
         }
-        protected void VerNombre() /// CAMBIA EL TEXTO DEL LABEL PARA MOSTRAR EL NOMBRE SELECCIONADO
+        protected void VerNombre() /// MUESTRA EL TEXTO DEL LABEL PARA MOSTRAR EL NOMBRE 
         {
             string nombre = txtNombre.Text;
             LBL_Nombre.Text = "<b>" + nombre + "</b>";
         }
-        protected void VerApellido() /// CAMBIA EL TEXTO DEL LABEL PARA MOSTRAR EL APELLIDO SELECCIONADO
+        protected void VerApellido() /// MUESTRA EL TEXTO DEL LABEL PARA MOSTRAR EL APELLIDO
         {
             string apellido = txtApellido.Text;
             LBL_Apellido.Text = "<b>" + apellido + "</b>";        
@@ -42,6 +42,19 @@ namespace TP2_GRUPO_15
         protected void VerZona() /// CAMBIA EL TEXTO DEL LABEL PARA MOSTRAR LA ZONA SELECCIONADA
         {
             LBL_Zona.Text = "<b>" + ddlCiudad.SelectedItem.Text + "</b>";
+        }
+
+        protected void VerTemas()
+        {
+            lblTemas.Text = "";
+
+            foreach (ListItem item in chkTemas.Items)
+            {
+                if (item.Selected)
+                {
+                    lblTemas.Text += "<b>" + item.Text + "</b><br/>";
+                }
+            }
         }
 
         protected void Page_Load(object sender, EventArgs e)
@@ -119,6 +132,9 @@ namespace TP2_GRUPO_15
             lblMensajeError.Text = "";
 
             VerZona(); /// COLOCA EN EL LABEL LA ZONA SELECCIONADA
+            lblMensajeError.Text = "";
+
+            VerTemas();
             lblMensajeError.Text = "";
         }
 
