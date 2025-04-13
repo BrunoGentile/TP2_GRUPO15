@@ -44,7 +44,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style2">
-                        <asp:LinkButton ID="linkbRojo" runat="server">Rojo</asp:LinkButton>
+                        <asp:LinkButton ID="linkbRojo" runat="server" OnClick="linkbRojo_Click">Rojo</asp:LinkButton>
                     </td>
                     <td class="auto-style3">
                         <asp:Button ID="btnInicio" runat="server" Text="Inicio" OnClick="btnInicio_Click" />
@@ -56,16 +56,16 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style2">
+                    <td class="auto-style4">
                         <asp:LinkButton ID="linkbAzul" runat="server" OnClick="linkbAzul_Click">Azul</asp:LinkButton>
                     </td>
-                    <td class="auto-style3">&nbsp;</td>
-                    <td>
-                        &nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style5"></td>
+                    <td class="auto-style6">
+                        </td>
+                    <td class="auto-style6"></td>
+                    <td class="auto-style6"></td>
+                    <td class="auto-style6"></td>
+                    <td class="auto-style6"></td>
                 </tr>
                 <tr>
                     <td class="auto-style2">

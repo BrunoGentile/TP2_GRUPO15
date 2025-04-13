@@ -28,5 +28,10 @@ namespace TP2_GRUPO_15
         {
             lblTexto.ForeColor = System.Drawing.Color.Blue;
         }
+
+        protected void linkbRojo_Click(object sender, EventArgs e)
+        {
+            lblTexto.ForeColor = System.Drawing.Color.Red;
+        }
     }
 }
