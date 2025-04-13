@@ -195,6 +195,8 @@
         </tr>
     </table>
         </div>
+    </form>
+    <form id="form2" runat="server">
         <div>
             <table class="auto-style1">
                 <tr>

@@ -51,6 +51,8 @@ namespace TP2_GRUPO_15
                 chkTemas.Items.Add("Ciencias");
                 chkTemas.Items.Add("Literatura");
                 chkTemas.Items.Add("Historia");
+
+                form2.Visible = false;
             }
         }
 
@@ -106,6 +108,10 @@ namespace TP2_GRUPO_15
             {
                 lblMensajeError.Text = "";
             }
+
+            form1.Visible = false;
+            form2.Visible = true;
+
             VerNombre();
             lblMensajeError.Text = "";
 
