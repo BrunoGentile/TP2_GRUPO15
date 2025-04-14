@@ -105,6 +105,10 @@ namespace TP2_GRUPO_15
             bool nombreValido = EsCampoValido(txtNombre);
             bool apellidoValido = EsCampoValido(txtApellido);
 
+            txtNombre.Text = firstLetterToUpper(txtNombre.Text);
+            txtApellido.Text = firstLetterToUpper(txtApellido.Text);
+
+
             if (!nombreValido || !apellidoValido)
             {
                 return;

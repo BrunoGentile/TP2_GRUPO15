@@ -95,7 +95,7 @@ namespace TP2_GRUPO_15
             {
                 PrecioAnterior = (float)ViewState["PrecioAnterior"];
                 lblAnterior.Text = "Precio anterior: " + PrecioAnterior.ToString("F2") + " $";
-
+            
                 float diferencia = 0;
 
                 if (PrecioAnterior > PrecioTotal)
@@ -110,7 +110,7 @@ namespace TP2_GRUPO_15
                 
 
             }
-
+    
             ViewState["PrecioAnterior"] = PrecioTotal;
 
             // string precioSeleccionado = ddlMemoria.SelectedValue;
