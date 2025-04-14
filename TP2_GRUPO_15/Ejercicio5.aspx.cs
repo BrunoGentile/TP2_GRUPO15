@@ -58,6 +58,14 @@ namespace TP2_GRUPO_15
         protected void btnCalcularPrecio_Click(object sender, EventArgs e)
         {
 
+            if (PrecioTotal == 4251){
+                PrecioTotal *= 0.9f;
+                lblSinDescuento.Text = "Antes: $4251 ";
+            }
+            else{
+                lblSinDescuento.Text = "",
+            }
+ 
             // string precioSeleccionado = ddlMemoria.SelectedValue;
 
             // decimal precioMemoria = decimal.TryParse(precioSeleccionado, out decimal resultado) ? resultado : 0;
