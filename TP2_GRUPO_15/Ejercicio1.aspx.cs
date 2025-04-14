@@ -107,7 +107,6 @@ namespace TP2_GRUPO_15
                 txtProducto2.Text = "";
                 txtCantidad.Text = "";
                 txtCantidad2.Text = "";
-            
 
         }
 

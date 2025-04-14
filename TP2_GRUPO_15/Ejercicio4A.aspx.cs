@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace TP2_GRUPO_15
 {
@@ -11,12 +6,21 @@ namespace TP2_GRUPO_15
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
             if (Session["IntentosFallidos"] == null)
             {
                 Session["IntentosFallidos"] = 0;
             }
-            
             lblIntentos.Text = "Intentos fallidos: " + Session["IntentosFallidos"].ToString();
+
+            int intentos = (int)Session["IntentosFallidos"];
+
+            if (intentos > 3)
+            {
+                Response.Redirect("Inicio.aspx");
+            }
+
+
         }
 
         /// FUNCIÓN PARA CONVERTIR STRING A MINÚSCULA
@@ -37,11 +41,12 @@ namespace TP2_GRUPO_15
 
             if (string.IsNullOrWhiteSpace(txtUsuario.Text) || string.IsNullOrWhiteSpace(txtClave.Text))
             {
-                txtUsuario.BackColor = System.Drawing.Color.DarkRed;
-                txtClave.BackColor = System.Drawing.Color.DarkRed;
+                lblMensaje.Text = "Se deben rellenar todos los campos."; //EN CASO DE QUE SE DEJEN CAMPOS VACÍOS
+      
                 return;
-            
-            }else if ( Usuario == "claudio" && Clave == "casas")
+            }
+
+            else if (Usuario == "claudio" && Clave == "casas")
             {
                 Session["IntentosFallidos"] = 0;
                 Server.Transfer("Ejercicio4B.aspx");
@@ -63,4 +68,5 @@ namespace TP2_GRUPO_15
             Response.Redirect("Inicio.aspx");
         }
     }
+    
 }

@@ -28,7 +28,6 @@
             height: 22px;
         }
         .auto-style7 {
-            width: 181px;
         }
         .auto-style8 {
             height: 22px;
@@ -107,8 +106,10 @@
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style7">&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style7" colspan="2">
+                        <br />
+                        <asp:Label ID="lblMensaje" runat="server" Font-Bold="True"></asp:Label>
+                    </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
