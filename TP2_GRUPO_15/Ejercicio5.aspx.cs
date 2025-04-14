@@ -11,6 +11,8 @@ namespace TP2_GRUPO_15
     public partial class Ejercicio5 : System.Web.UI.Page
     {
 
+        /// MÉTODO PARA CALCULAR PRECIO TOTAL
+
         protected float CalcularPrecioTotal() /// RETORNA PRECIO TOTAL
         {
             float PrecioTotal = 0; /// VARIABLE QUE ALMACENA PRECIO TOTAL
@@ -39,6 +41,8 @@ namespace TP2_GRUPO_15
             return PrecioTotal;
         }
 
+        /// MÉTODO QUE SE EJECUTA CUANDO SE CARGA LA PÁGINA
+
         protected void Page_Load(object sender, EventArgs e)
         {
             //CARGAR DROPDOWNLIST
@@ -55,62 +59,69 @@ namespace TP2_GRUPO_15
             Response.Redirect("Inicio.aspx");
         }
 
+        /// MÉTODO CALCULAR PRECIO
+
         protected void btnCalcularPrecio_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
 
-            if (PrecioTotal == 4251){
-                PrecioTotal *= 0.9f;
-                lblSinDescuento.Text = "Antes: $4251 ";
+            // string precioSeleccionado = ddlMemoria.SelectedValue;
+
+            // decimal precioMemoria = decimal.TryParse(precioSeleccionado, out decimal resultado) ? resultado : 0;
+            float PrecioAnterior=0;
+            float PrecioTotal=0;
+            
+            if (cblAccesorios.SelectedItem != null) //Validar que se seleccione una opción
+            {
+                 PrecioTotal = CalcularPrecioTotal();
+
+                if (PrecioTotal == 4251)
+                {
+                    PrecioTotal *= 0.9f;
+                    lblSinDescuento.Text = "Sin descuento: $4251 ";
+                }
+                else
+                {
+                    lblSinDescuento.Text = "";
             }
-            else{
-                lblSinDescuento.Text = "",
+
+                LBL_PrecioFinal.Text = "El precio final es de " + PrecioTotal.ToString("F2") + " $";
+
+            } else
+            {
+                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Seleccione por lo menos un accesorio.');", true);
             }
- 
+
+            if (ViewState["PrecioAnterior"] != null)
+            {
+                PrecioAnterior = (float)ViewState["PrecioAnterior"];
+                lblAnterior.Text = "Precio anterior: " + PrecioAnterior.ToString("F2") + " $";
+
+                float diferencia = 0;
+
+                if (PrecioAnterior > PrecioTotal)
+                {
+                    diferencia = PrecioAnterior - PrecioTotal;
+                }
+                else
+                {
+                    diferencia = PrecioTotal - PrecioAnterior;
+                }
+                    lblDiferencia.Text = "la diferencia de precio con el cálculo anterior es de $" + diferencia.ToString("F2");
+                
+
+            }
+
+            ViewState["PrecioAnterior"] = PrecioTotal;
+
             // string precioSeleccionado = ddlMemoria.SelectedValue;
 
             // decimal precioMemoria = decimal.TryParse(precioSeleccionado, out decimal resultado) ? resultado : 0;
 
-            
-            if (cblAccesorios.SelectedItem != null) //Validar que se seleccione una opción
-            {
 
-                float precioAnterior = ViewState["PrecioAnterior"] != null ? (float)ViewState["PrecioAnterior"] : 0; //
-
-                float PrecioTotal = CalcularPrecioTotal();
-                LBL_PrecioFinal.Text = "El precio final es de " + PrecioTotal.ToString("F2") + " $";
-
-                float diferencia = precioAnterior - PrecioTotal;
-
-                if (precioAnterior != 0)
-                {
-                    lblDiferencia.Text = "la diferencia de precio con el cálculo anterior es de $" + diferencia.ToString("F2") ;
-                }
-
-                ViewState["PrecioAnterior"] = PrecioTotal;
-            }
-            
-            else
-            {
-                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Seleccione por lo menos un accesorio.');", true);
-            }
-=======
-            if (ViewState["PrecioAnterior"] != null)
-            {
-                float precioAnterior = (float)ViewState["PrecioAnterior"];
-                lblAnterior.Text = "Precio anterior: " + precioAnterior.ToString("F2") + " $";
-            }
-           // string precioSeleccionado = ddlMemoria.SelectedValue;
-
-           // decimal precioMemoria = decimal.TryParse(precioSeleccionado, out decimal resultado) ? resultado : 0;
-
-            float PrecioTotal = CalcularPrecioTotal();
-            LBL_PrecioFinal.Text = "El precio final es de " + PrecioTotal.ToString("F2") + " $";
-
-            ViewState["PrecioAnterior"] = PrecioTotal;
-
->>>>>>> 5def9ef... lblAnterior ej 5
         }
+
+        /// BOTÓN PARA DOLARIZAR
+
         protected void BTN_Dolarizar_Click(object sender, EventArgs e) /// DOLARIZA EL PRECIO
         {
             float PrecioTotal = CalcularPrecioTotal() / 1074.09f;
@@ -131,6 +142,8 @@ namespace TP2_GRUPO_15
             // Limpiar el texto del label del precio final
             LBL_PrecioFinal.Text = "";
             lblDiferencia.Text = "";
+            lblAnterior.Text = "";
+            lblSinDescuento.Text = "";
         }
     }
 }

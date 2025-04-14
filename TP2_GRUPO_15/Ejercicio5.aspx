@@ -352,10 +352,32 @@
                 <tr>
                     <td>&nbsp;</td>
                     <td class="auto-style2">
-                        <asp:Label ID="LBL_PrecioFinal" runat="server"></asp:Label>
+                        <asp:Label ID="lblSinDescuento" runat="server"></asp:Label>
                     </td>
                     <td class="auto-style5">&nbsp;</td>
                     <td class="auto-style19">&nbsp;</td>
+                    <td class="auto-style16">&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td class="auto-style3">&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td class="auto-style2">
+                        <asp:Label ID="LBL_PrecioFinal" runat="server"></asp:Label>
+                    </td>
+                    <td class="auto-style5">&nbsp;</td>
+                    <td class="auto-style19">
+                        <asp:Button ID="btnReset" runat="server" OnClick="btnReset_Click" Text="Reset" />
+                    </td>
                     <td class="auto-style16">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -376,8 +398,7 @@
                     </td>
                     <td class="auto-style5">&nbsp;</td>
                     <td class="auto-style19">
-                        <asp:Button ID="btnReset" runat="server" OnClick="btnReset_Click" Text="Reset" />
-                    </td>
+                        &nbsp;</td>
                     <td class="auto-style16">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
