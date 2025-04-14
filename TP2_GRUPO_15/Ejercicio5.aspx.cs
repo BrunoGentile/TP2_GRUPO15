@@ -70,11 +70,26 @@ namespace TP2_GRUPO_15
             // string precioSeleccionado = ddlMemoria.SelectedValue;
 
             // decimal precioMemoria = decimal.TryParse(precioSeleccionado, out decimal resultado) ? resultado : 0;
+
+            
             if (cblAccesorios.SelectedItem != null) //Validar que se seleccione una opción
             {
+
+                float precioAnterior = ViewState["PrecioAnterior"] != null ? (float)ViewState["PrecioAnterior"] : 0; //
+
                 float PrecioTotal = CalcularPrecioTotal();
                 LBL_PrecioFinal.Text = "El precio final es de " + PrecioTotal.ToString("F2") + " $";
+
+                float diferencia = precioAnterior - PrecioTotal;
+
+                if (precioAnterior != 0)
+                {
+                    lblDiferencia.Text = "la diferencia de precio con el cálculo anterior es de $" + diferencia.ToString("F2") ;
+                }
+
+                ViewState["PrecioAnterior"] = PrecioTotal;
             }
+            
             else
             {
                 ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Seleccione por lo menos un accesorio.');", true);
