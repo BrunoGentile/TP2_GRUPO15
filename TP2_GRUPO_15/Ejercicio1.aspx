@@ -96,6 +96,17 @@
                 <tr>
                     <td class="auto-style6"></td>
                     <td class="auto-style7">
+                        &nbsp;</td>
+                    <td class="auto-style8"></td>
+                    <td class="auto-style6"></td>
+                    <td class="auto-style10"></td>
+                    <td class="auto-style12">
+                        &nbsp;</td>
+                    <td class="auto-style9"></td>
+                </tr>
+                <tr>
+                    <td class="auto-style6"></td>
+                    <td class="auto-style7">
                         <asp:Button ID="BtnTabla" runat="server" Font-Bold="False" Font-Size="Small" style="margin-bottom: 0px" Text="Generar Tabla" OnClick="BtnTabla_Click" />
                     </td>
                     <td class="auto-style8"></td>
@@ -108,18 +119,8 @@
                 </tr>
                 <tr>
                     <td class="auto-style6"></td>
-                    <td class="auto-style7"></td>
-                    <td class="auto-style8"></td>
-                    <td class="auto-style6"></td>
-                    <td class="auto-style10"></td>
-                    <td class="auto-style12"></td>
-                    <td class="auto-style9"></td>
-                </tr>
-                <tr>
-                    <td class="auto-style6"></td>
                     <td class="auto-style7">
-                        <asp:Label ID="lblTabla" runat="server"></asp:Label>
-                    </td>
+                        &nbsp;</td>
                     <td class="auto-style8"></td>
                     <td class="auto-style6"></td>
                     <td class="auto-style10"></td>
@@ -128,7 +129,9 @@
                 </tr>
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
-                    <td class="auto-style3">&nbsp;</td>
+                    <td class="auto-style3">
+                        <asp:Label ID="lblTabla" runat="server"></asp:Label>
+                    </td>
                     <td class="auto-style4">&nbsp;</td>
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style5">&nbsp;</td>
