@@ -60,25 +60,13 @@ namespace TP2_GRUPO_15
         protected global::System.Web.UI.WebControls.Button btnInicio;
 
         /// <summary>
-        /// Control lblAnterior.
-<<<<<<< HEAD
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblAnterior;
-
-        /// <summary>
         /// Control LBL_PrecioFinal.
-=======
->>>>>>> 5def9ef... lblAnterior ej 5
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblAnterior;
+        protected global::System.Web.UI.WebControls.Label LBL_PrecioFinal;
 
         /// <summary>
         /// Control BTN_Dolarizar.
@@ -88,6 +76,15 @@ namespace TP2_GRUPO_15
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button BTN_Dolarizar;
+
+        /// <summary>
+        /// Control lblDiferencia.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblDiferencia;
 
         /// <summary>
         /// Control LBL_PrecioFinal.

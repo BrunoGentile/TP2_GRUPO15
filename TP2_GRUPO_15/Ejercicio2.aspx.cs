@@ -122,7 +122,7 @@ namespace TP2_GRUPO_15
                 lblMensajeError.Text = "";
             }
 
-            form1.Visible = false;
+            form1.Visible = false; //se esconde el primer formulario
             form2.Visible = true;
 
             VerNombre();

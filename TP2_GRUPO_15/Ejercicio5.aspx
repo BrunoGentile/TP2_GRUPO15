@@ -311,8 +311,7 @@
                 <tr>
                     <td>&nbsp;</td>
                     <td class="auto-style2">
-                        <asp:Label ID="lblAnterior" runat="server"></asp:Label>
-                    </td>
+                        &nbsp;</td>
                     <td class="auto-style5">&nbsp;</td>
                     <td class="auto-style19">&nbsp;</td>
                     <td class="auto-style16">&nbsp;</td>
@@ -372,7 +371,9 @@
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td class="auto-style2">&nbsp;</td>
+                    <td class="auto-style2">
+                        <asp:Label ID="lblDiferencia" runat="server"></asp:Label>
+                    </td>
                     <td class="auto-style5">&nbsp;</td>
                     <td class="auto-style19">
                         <asp:Button ID="btnReset" runat="server" OnClick="btnReset_Click" Text="Reset" />

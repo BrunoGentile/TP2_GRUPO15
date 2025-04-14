@@ -130,7 +130,7 @@ namespace TP2_GRUPO_15
 
             // Limpiar el texto del label del precio final
             LBL_PrecioFinal.Text = "";
-            lblAnterior.Text = "";
+            lblDiferencia.Text = "";
         }
     }
 }
