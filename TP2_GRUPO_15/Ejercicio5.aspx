@@ -71,6 +71,17 @@
             height: 26px;
             width: 145px;
         }
+        .auto-style22 {
+            width: 65px;
+        }
+        .auto-style23 {
+            height: 23px;
+            width: 65px;
+        }
+        .auto-style24 {
+            height: 26px;
+            width: 65px;
+        }
     </style>
 </head>
 <body>
@@ -85,7 +96,7 @@
                     <td class="auto-style16">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style22">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td class="auto-style3">&nbsp;</td>
                     <td>&nbsp;</td>
@@ -103,7 +114,7 @@
                     <td class="auto-style16">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style22">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td class="auto-style3">&nbsp;</td>
                     <td>&nbsp;</td>
@@ -121,7 +132,7 @@
                     <td class="auto-style16">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style22">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td class="auto-style3">&nbsp;</td>
                     <td>&nbsp;</td>
@@ -139,7 +150,7 @@
                     <td class="auto-style17"></td>
                     <td class="auto-style6"></td>
                     <td class="auto-style6"></td>
-                    <td class="auto-style6"></td>
+                    <td class="auto-style23"></td>
                     <td class="auto-style6"></td>
                     <td class="auto-style10"></td>
                     <td class="auto-style6"></td>
@@ -157,7 +168,7 @@
                     <td class="auto-style17"></td>
                     <td class="auto-style6"></td>
                     <td class="auto-style6"></td>
-                    <td class="auto-style6"></td>
+                    <td class="auto-style23"></td>
                     <td class="auto-style6"></td>
                     <td class="auto-style10"></td>
                     <td class="auto-style6"></td>
@@ -178,7 +189,7 @@
                     <td class="auto-style18"></td>
                     <td class="auto-style11"></td>
                     <td class="auto-style11"></td>
-                    <td class="auto-style11"></td>
+                    <td class="auto-style24"></td>
                     <td class="auto-style11"></td>
                     <td class="auto-style15"></td>
                     <td class="auto-style11"></td>
@@ -196,7 +207,7 @@
                     <td class="auto-style17"></td>
                     <td class="auto-style6"></td>
                     <td class="auto-style6"></td>
-                    <td class="auto-style6"></td>
+                    <td class="auto-style23"></td>
                     <td class="auto-style6"></td>
                     <td class="auto-style10"></td>
                     <td class="auto-style6"></td>
@@ -214,7 +225,7 @@
                     <td class="auto-style17"></td>
                     <td class="auto-style6"></td>
                     <td class="auto-style6"></td>
-                    <td class="auto-style6"></td>
+                    <td class="auto-style23"></td>
                     <td class="auto-style6"></td>
                     <td class="auto-style10"></td>
                     <td class="auto-style6"></td>
@@ -238,7 +249,7 @@
                     <td class="auto-style16">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style22">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td class="auto-style3">&nbsp;</td>
                     <td>&nbsp;</td>
@@ -253,11 +264,13 @@
                     <td class="auto-style7">
                     </td>
                     <td class="auto-style8"></td>
-                    <td class="auto-style20"></td>
+                    <td class="auto-style20">
+                        <asp:Label ID="lblDescuento" runat="server" Text="Seleccionando 6 GB Y todos los accesorios tienen un descuento del 10%"></asp:Label>
+                    </td>
                     <td class="auto-style17"></td>
                     <td class="auto-style6"></td>
                     <td class="auto-style6"></td>
-                    <td class="auto-style6"></td>
+                    <td class="auto-style23"></td>
                     <td class="auto-style6"></td>
                     <td class="auto-style10"></td>
                     <td class="auto-style6"></td>
@@ -277,7 +290,7 @@
                     <td class="auto-style17"></td>
                     <td class="auto-style6"></td>
                     <td class="auto-style6"></td>
-                    <td class="auto-style6"></td>
+                    <td class="auto-style23"></td>
                     <td class="auto-style6"></td>
                     <td class="auto-style10"></td>
                     <td class="auto-style6"></td>
@@ -298,7 +311,7 @@
                     <td class="auto-style16">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style22">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td class="auto-style3">&nbsp;</td>
                     <td>&nbsp;</td>
@@ -317,7 +330,7 @@
                     <td class="auto-style16">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style22">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td class="auto-style3">&nbsp;</td>
                     <td>&nbsp;</td>
@@ -330,7 +343,7 @@
                 <tr>
                     <td class="auto-style6"></td>
                     <td class="auto-style7">
-                        <asp:Label ID="lblAnterior" runat="server"></asp:Label>
+                        <asp:Label ID="lblSinDescuento" runat="server"></asp:Label>
                     </td>
                     <td class="auto-style8"></td>
                     <td class="auto-style20">
@@ -339,7 +352,7 @@
                     <td class="auto-style17"></td>
                     <td class="auto-style6"></td>
                     <td class="auto-style6"></td>
-                    <td class="auto-style6"></td>
+                    <td class="auto-style23"></td>
                     <td class="auto-style6"></td>
                     <td class="auto-style10"></td>
                     <td class="auto-style6"></td>
@@ -359,7 +372,7 @@
                     <td class="auto-style16">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style22">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td class="auto-style3">&nbsp;</td>
                     <td>&nbsp;</td>
@@ -381,7 +394,7 @@
                     <td class="auto-style16">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style22">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td class="auto-style3">&nbsp;</td>
                     <td>&nbsp;</td>

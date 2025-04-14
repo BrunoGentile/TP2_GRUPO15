@@ -32,6 +32,7 @@
         .auto-style21 {
             width: 145px;
             height: 26px;
+            width: 224px;
         }
         .auto-style22 {
             width: 145px;
@@ -43,6 +44,11 @@
         .auto-style24 {
             width: 160px;
             height: 26px;
+            width: 214px;
+        }
+        .auto-style18 {
+            height: 23px;
+            width: 214px;
         }
         .auto-style25 {
             width: 160px;
