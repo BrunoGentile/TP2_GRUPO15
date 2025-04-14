@@ -69,6 +69,24 @@ namespace TP2_GRUPO_15
         protected global::System.Web.UI.WebControls.Button btnInicio;
 
         /// <summary>
+        /// Control lblSinDescuento.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblSinDescuento;
+
+        /// <summary>
+        /// Control BTN_Dolarizar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BTN_Dolarizar;
+
+        /// <summary>
         /// Control lblAnterior.
         /// </summary>
         /// <remarks>
@@ -76,32 +94,6 @@ namespace TP2_GRUPO_15
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblAnterior;
-
-        /// <summary>
-<<<<<<< HEAD
-        /// Control BTN_Dolarizar.
-=======
-        /// Control lblSinDescuento.
->>>>>>> 612a7a9... hice la funcionalidad de los botones de inicio y arregle el ejercicio 3 para que pinte los los colores
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-<<<<<<< HEAD
-        protected global::System.Web.UI.WebControls.Button BTN_Dolarizar;
-=======
-        protected global::System.Web.UI.WebControls.Label lblSinDescuento;
->>>>>>> 612a7a9... hice la funcionalidad de los botones de inicio y arregle el ejercicio 3 para que pinte los los colores
-
-        /// <summary>
-        /// Control lblSinDescuento.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSinDescuento;
 
         /// <summary>
         /// Control LBL_PrecioFinal.

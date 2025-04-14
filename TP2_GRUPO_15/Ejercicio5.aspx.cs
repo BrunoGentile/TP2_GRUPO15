@@ -24,15 +24,16 @@ namespace TP2_GRUPO_15
                 case 2: PrecioTotal += 500; break;
             }
 
-            foreach ( ListItem Item in cblAccesorios.Items ) /// RECORRE LOS ACCESORIOS
+            foreach (ListItem Item in cblAccesorios.Items) /// RECORRE LOS ACCESORIOS
             {
-                if ( Item.Selected ) /// VERIFICA QUE EL ITEM ESTÉ SELECCIONADO
+                if (Item.Selected) /// VERIFICA QUE EL ITEM ESTÉ SELECCIONADO
                 {
 
-                    switch( int.Parse(Item.Value) ){
-                       case 0: PrecioTotal += 2000.50f; break;
-                       case 1: PrecioTotal += 550.50f; break;
-                       case 2: PrecioTotal += 1200; break;
+                    switch (int.Parse(Item.Value))
+                    {
+                        case 0: PrecioTotal += 2000.50f; break;
+                        case 1: PrecioTotal += 550.50f; break;
+                        case 2: PrecioTotal += 1200; break;
                     }
 
                 }
@@ -63,22 +64,16 @@ namespace TP2_GRUPO_15
 
         protected void btnCalcularPrecio_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
 
-=======
-            float PrecioTotal;
-          
->>>>>>> 612a7a9... hice la funcionalidad de los botones de inicio y arregle el ejercicio 3 para que pinte los los colores
             // string precioSeleccionado = ddlMemoria.SelectedValue;
 
             // decimal precioMemoria = decimal.TryParse(precioSeleccionado, out decimal resultado) ? resultado : 0;
-            float PrecioAnterior=0;
-            float PrecioTotal=0;
-            
+            float PrecioAnterior = 0;
+            float PrecioTotal = 0;
+
             if (cblAccesorios.SelectedItem != null) //Validar que se seleccione una opción
             {
-<<<<<<< HEAD
-                 PrecioTotal = CalcularPrecioTotal();
+                PrecioTotal = CalcularPrecioTotal();
 
                 if (PrecioTotal == 4251)
                 {
@@ -88,27 +83,21 @@ namespace TP2_GRUPO_15
                 else
                 {
                     lblSinDescuento.Text = "";
-=======
-                PrecioTotal = CalcularPrecioTotal();
+                }
+
                 LBL_PrecioFinal.Text = "El precio final es de " + PrecioTotal.ToString("F2") + " $";
->>>>>>> 612a7a9... hice la funcionalidad de los botones de inicio y arregle el ejercicio 3 para que pinte los los colores
+
             }
-
-                LBL_PrecioFinal.Text = "El precio final es de " + PrecioTotal.ToString("F2") + " $";
-
-            } else
+            else
             {
                 ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Seleccione por lo menos un accesorio.');", true);
             }
-<<<<<<< HEAD
 
-=======
->>>>>>> 612a7a9... hice la funcionalidad de los botones de inicio y arregle el ejercicio 3 para que pinte los los colores
             if (ViewState["PrecioAnterior"] != null)
             {
                 PrecioAnterior = (float)ViewState["PrecioAnterior"];
                 lblAnterior.Text = "Precio anterior: " + PrecioAnterior.ToString("F2") + " $";
-            
+
                 float diferencia = 0;
 
                 if (PrecioAnterior > PrecioTotal)
@@ -119,41 +108,18 @@ namespace TP2_GRUPO_15
                 {
                     diferencia = PrecioTotal - PrecioAnterior;
                 }
-                    lblDiferencia.Text = "la diferencia de precio con el cálculo anterior es de $" + diferencia.ToString("F2");
-                
+                lblDiferencia.Text = "la diferencia de precio con el cálculo anterior es de $" + diferencia.ToString("F2");
+
 
             }
-<<<<<<< HEAD
-    
+
             ViewState["PrecioAnterior"] = PrecioTotal;
 
             // string precioSeleccionado = ddlMemoria.SelectedValue;
 
             // decimal precioMemoria = decimal.TryParse(precioSeleccionado, out decimal resultado) ? resultado : 0;
-=======
-            // string precioSeleccionado = ddlMemoria.SelectedValue;
-
-            // decimal precioMemoria = decimal.TryParse(precioSeleccionado, out decimal resultado) ? resultado : 0;
-
-            PrecioTotal = CalcularPrecioTotal();
-
-            LBL_PrecioFinal.Text = "El precio final es de " + PrecioTotal.ToString("F2") + " $";
->>>>>>> 612a7a9... hice la funcionalidad de los botones de inicio y arregle el ejercicio 3 para que pinte los los colores
 
 
-<<<<<<< HEAD
-=======
-            if (PrecioTotal == 4251)
-            {
-                PrecioTotal *= 0.9f;
-                lblSinDescuento.Text = "Antes: $4251 ";
-            }
-            else
-            {
-                lblSinDescuento.Text = "";
-            }
-
->>>>>>> 612a7a9... hice la funcionalidad de los botones de inicio y arregle el ejercicio 3 para que pinte los los colores
         }
 
         /// BOTÓN PARA DOLARIZAR
