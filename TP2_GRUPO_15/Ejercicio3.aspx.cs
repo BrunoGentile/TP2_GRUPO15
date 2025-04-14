@@ -22,7 +22,7 @@ namespace TP2_GRUPO_15
         protected void linkbVerde_Click(object sender, EventArgs e)
         {
            lblTexto.ForeColor = System.Drawing.Color.Green;
-            lblTexto.Text = lblTexto.Text.ToUpper();
+           lblTexto.Text = lblTexto.Text.ToUpper();
         }
 
         protected void Btn_restablecer_Click(object sender, EventArgs e)
@@ -33,11 +33,13 @@ namespace TP2_GRUPO_15
 
         protected void linkbRojo_Click(object sender, EventArgs e)
         {
+            lblTexto.ForeColor = System.Drawing.Color.Red;
             lblTexto.Text = lblTexto.Text.ToUpper();
         }
 
         protected void linkbAzul_Click(object sender, EventArgs e)
         {
+            lblTexto.ForeColor = System.Drawing.Color.Blue;
             lblTexto.Text = lblTexto.Text.ToUpper();
         }
     }
