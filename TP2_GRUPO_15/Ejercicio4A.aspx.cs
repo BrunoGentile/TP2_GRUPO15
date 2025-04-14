@@ -17,6 +17,7 @@ namespace TP2_GRUPO_15
 
             if (intentos > 3)
             {
+                Session["IntentosFallidos"] = 0;
                 Response.Redirect("Inicio.aspx");
             }
 
