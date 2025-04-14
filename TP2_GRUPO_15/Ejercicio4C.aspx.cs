@@ -11,6 +11,25 @@ namespace TP2_GRUPO_15
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            string usuario;
+            string contraseña;
+            if (!IsPostBack) { 
+            usuario = Request["txtUsuario"].ToString();
+            contraseña = Request["txtClave"].ToString();
+            if (usuario != "claudio" && contraseña != "casas")
+            {
+                LBL_Error.Text = "EL USUARIO Y CONTRASEÑA ES INVALIDO";
+            }
+            else if (usuario != "claudio")
+            {
+                LBL_Error.Text = "EL USUARIO ES INVALIDO";
+            }
+            else
+            {
+                LBL_Error.Text = "LA CONTRASEÑA ES INVALIDA";
+            }
+            }
+
 
         }
 
